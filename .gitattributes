@@ -3,3 +3,4 @@ d:/pr/vesselrouteanalysisproject/ship/pythonfile/* filter=lfs diff=lfs merge=lfs
 d:/pr/vesselrouteanalysisproject/ship/predictserver/* filter=lfs diff=lfs merge=lfs -text
 D:/PR/VesselRouteAnalysisProject/ship/pythonFile/* filter=lfs diff=lfs merge=lfs -text
 D:/PR/VesselRouteAnalysisProject/ship/pythonFile/0623[[:space:]]하린[[:space:]](인천-베트남).ipynb filter=lfs diff=lfs merge=lfs -text
+*.ipynb filter=lfs diff=lfs merge=lfs -text
