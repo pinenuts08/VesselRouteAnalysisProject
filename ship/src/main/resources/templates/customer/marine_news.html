@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title> Marine News </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/marinenews.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- style css -->
+	<link rel="stylesheet" href="css/index.css">
+	
+	<!-- 메뉴 css -->
+	<link rel="stylesheet" href="css/menu_black.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+
+.container {
+    /* width: 2000px; */
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+div.col-12{
+padding-top:10px;
+}
+div.col-12:hover{
+background: #D9E5FF;
+}
+</style>
+</head>
+
+<!-- body -->
+
+<body class="main-layout inner_page">
+	<header>
+		<!-- header inner -->
+		<div class="head-top">
+
+			<div class="container-fluid">
+				<div class="row d_flex">
+					<div class="navbar_mega">
+					<!-- class="col-sm-3" -->
+						<!--로그인, 메뉴 버튼 오른쪽 정렬-->
+						<div class="logo">
+							<!--로고-->
+							<a th:href=@{/} style="padding:0px;"><img th:src="@{/images/black_logo.png}" class="logoimg"></a>
+						</div> 
+					
+						<a th:href=@{/about} style="font-size:20px; color:rgb(9, 9, 146); font-weight:bold;"> About us </a>
+						
+						<div class="subnav">
+							<button class="subnavbtn">Service <i class="fa fa-caret-down"></i></button>
+							<div class="subnav-content">
+								<a th:href=@{/serviceinfo}> 서비스 정보 </a>
+								<a th:href=@{/subscribe}> 구독하기 </a>
+								<a th:href=@{/cargoeye}> CargoEye </a>
+							</div>
+						</div>
+						<div class="subnav">
+							<button class="subnavbtn">Information <i class="fa fa-caret-down"></i>
+							</button>
+							<div class="subnav-content">
+								<a th:href=@{/exchange}>환율 정보</a> 
+								<a th:href=@{/weather}>날씨 정보</a> 
+								<a th:href=@{/shipInfo}>부대비용</a> 
+								<a th:href=@{/schedule}>선박 스케줄</a>
+							</div>
+						</div>
+						<div class="subnav">
+							<button class="subnavbtn">Customer <i class="fa fa-caret-down"></i>
+							</button>
+							<div class="subnav-content">
+								<a th:href=@{/boardList}>자유게시판 </a> <!-- 하민 -->
+								<a th:href=@{/marine_news}>해운뉴스</a>  <!-- 혜민 -->
+								<a th:href=@{/contact}>Contact us</a> 
+								
+							</div>
+						</div>
+						<div class="subnav login_cargoeye">
+							<!--상단메뉴아이콘 <img class="openbtn" src="images/menu_btn.png">--> 
+							
+							<a th:href=@{/cargoeye} >
+							<img th:src="@{/images/logo1.png}" style="width:28px; margin-bottom: 5px;">
+								<span style="padding-left:0px;">CargoEye</span></a>					
+						</div>						
+						</div>			
+					</div><!-- .navbar_mega-->	
+					<!-- end ._cargoeye-->
+				</div>
+				<!-- end .login+cargoeye -->
+			</div>
+
+			<a th:href=@{/login}>
+				<i class="fa fa-user" aria-hidden="true"  style="top: 15px; right: 15px;"> Login</i>	
+			</a>
+	</header>
+
+<hr style="margin-bottom: 0px !important;">
+
+
+    <!-- 블로그 시작 -->
+    <div style="background-color: whitesmoke;">
+    <div class="container py-4 py-lg-5" style="padding-top:33px!important; ">
+        <div class="fables-blog my-3" >
+   		<h1><strong>Marine News</strong></h1><br><br><br>			
+			
+            <div class="row" style="background-color: white;">
+                <div class="col-12 col-md-4 mb-4 mb-lg-5">
+                    <a href="#"><img src="images/news1.jpg" alt="" class="w-100"></a>
+                    <h2 class="font-18 semi-font font-18  mt-3"><a href="#"
+                            class="fables-main-text-color fables-second-hover-color"> 컨테이너 안전관리 강화… <br>‘선박안전법’ 개정안
+                            시행</a>
+                    </h2>
+                    <p class="fables-fifth-text-color font-13 my-1">2023년 6월 29일</p>
+                    <p class="fables-forth-text-color font-14">
+                        항만에 반입되는 해상운송용 컨테이너의 안전 관리가 더욱 강화된다.
+                        해양수산부는 해상운송용 컨테이너의 안전성을 강화하고 안전사고를 예방하고자 개정된 ‘선박안전법’이 28일 시행된다고 밝혔다.
+                    </p>
+                    <a href="" class="btn fables-main-text-color fables-second-hover-color p-0 underline mt-2">Read
+                        More</a>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4 mb-lg-5">
+                    <a href="#"><img src="images/news3.jpg" alt="" class="w-100"></a>
+                    <h2 class="font-18 semi-font font-18  mt-3"><a href="#"
+                            class="fables-main-text-color fables-second-hover-color">부산항만공사, 공공기관 혁신 초점 <br>맞춘 조직개편
+                            단행</a>
+                    </h2>
+                    <p class="fables-fifth-text-color font-13 my-1">2023년 6월 30일</p>
+                    <p class="fables-forth-text-color font-14">
+                        조직규모는 정부의 공공기관 혁신방향에 부응하여 조직 슬림화 및 대부서 체제를 유지, 3본부 2사업단 23개 부서로 지속 운영된다.
+                        주요 개편사항으로 국민소통 활성화, 대내·외 이해관계자 변화 관리 및 전략 수립 등 신규 기능을 신설하여...
+                    </p>
+                    <a href="" class="btn fables-main-text-color fables-second-hover-color p-0 underline mt-2">Read
+                        More</a>
+
+                </div>
+
+                <div class="col-12 col-md-4 mb-4 mb-lg-5">
+                    <a href="#"><img src="images/news4.jpg" alt="" class="w-100"></a>
+                    <h2 class="font-18 semi-font font-18  mt-3"><a href="#"
+                            class="fables-main-text-color fables-second-hover-color">인력난 조선업 외국인근로자 도입은 단기처방 불과해</a>
+                    </h2>
+                    <p class="fables-fifth-text-color font-13 my-1"> 2023년 7월 10일</p>
+                    <p class="fables-forth-text-color font-14">
+                        조선업 최대 화두인 인력난을 외국인 근로자가 아닌 ‘스마트 조선소’ 구축으로 풀어야 한다는 주장이 나왔다. 외국인 인력 투입은 단기 솔루션에 그쳐 한국 조선업의 지속적인
+                        성장을 이끌어내지 못할 거란 지적이다. 조선업
+                        인력 유출과...
+                    </p>
+                    <a href="" class="btn fables-main-text-color fables-second-hover-color p-0 underline mt-2">Read
+                        More</a>
+
+                </div>
+
+                <div class="col-12 col-md-4 mb-4 mb-lg-5">
+                    <a href="#"><img src="images/news2.jpg" alt="" class="w-100"></a>
+                    <h2 class="font-18 semi-font font-18  mt-3"><a href="#"
+                            class="fables-main-text-color fables-second-hover-color"> 美 FMC, “수송계약 미이행” 머스크 <br> 자회사에
+                            125억 배상명령</a>
+                    </h2>
+                    <p class="fables-fifth-text-color font-13 my-1"> 2023년 7월 12일</p>
+                    <p class="fables-forth-text-color font-14">
+                        덴마크 컨테이너선사 머스크의 독일 자회사인 함부르크수드가 화주에게 120억원을 배상금을 물게 됐다.
+
+                        미국 연방해사위원회(FMC)는 코로나 사태로 야기된 세계적인 공급망 대란 상황에서 자국 가구 수입업체인 OJ커머스와 수송...
+                    </p>
+                    <a href="" class="btn fables-main-text-color fables-second-hover-color p-0 underline mt-2">Read
+                        More</a>
+
+                </div>
+
+                <div class="col-12 col-md-4 mb-4 mb-lg-5">
+                    <a href="#"><img src="images/news5.jpg" alt="" class="w-100"></a>
+                    <h2 class="font-18 semi-font font-18  mt-3"><a href="#"
+                            class="fables-main-text-color fables-second-hover-color"> 日 MOL, 바이오메탄 연료 선박 시험운항 성공 </a>
+                    </h2>
+                    <p class="fables-fifth-text-color font-13 my-1"> 2023년 7월 13일</p>
+                    <p class="fables-forth-text-color font-14">
+                        일본 선사 MOL은 자국 내 최초로 가축 분뇨에서 추출한 액화 바이오메탄(LBM)을 내항 선박 연료로 사용하는 실증 실험에 성공했다고 밝혔다. 선박 시험운항에 참여한 기업은
+                        MOL과 연안해운 자회사인
+                        MOL나이코(內航)를 비롯해...
+                    </p>
+                    <a href="" class="btn fables-main-text-color fables-second-hover-color p-0 underline mt-2">Read
+                        More</a>
+
+                </div>
+
+                <div class="col-12 col-md-4 mb-4 mb-lg-5">
+                    <a href="#"><img src="images/news6.jpg" alt="" class="w-100"></a>
+                    <h2 class="font-18 semi-font font-18  mt-3"><a href="#"
+                            class="fables-main-text-color fables-second-hover-color"> 국제물류협회, 대규모 물류센터 태양광 공동 개발</a>
+                    </h2>
+                    <p class="fables-fifth-text-color font-13 my-1"> 2023년 6월 30일</p>
+                    <p class="fables-forth-text-color font-14">
+                        한국국제물류협회(KIFFA)는 최근 신재생에너지 전문기업 소울에너지, 한화솔루션과 지붕형 태양광 공동 개발 업무협약을 체결했다고 밝혔다.
+                        소울에너지 본사에서 열린 관계자들이 참석했다...
+                    </p>
+                    <a href="" class="btn fables-main-text-color fables-second-hover-color p-0 underline mt-2">Read
+                        More</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- // 블로그 끝 -->
+
+    <!-- 페이지 시작-->
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <!-- //페이지 끝-->
+  </div>
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title> 게시판 </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- bootstrap css -->
+    <!------------------------ 부트스트랙 바꿀 것 -------------------------
+    .col-md-8{-ms-flex:0 0 66.666667%;}로 바꿔주세요
+    -------------------------------------------------------------------->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+
+
+    <!-- style css -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <!-- responsive-->
+    <link rel="stylesheet"  th:href="@{/css/responsive.css}">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" th:href="@{/css/boardList.css}">
+    
+    <!-- Javascript files-->
+	<script th:src="@{/js/jquery-3.7.0.min.js}"></script>
+    <script th:src="@{/js/boardList.js}"></script>
+	<script th:src="@{/js/jquery.min.js}"></script>
+	<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+	<script th:src="@{/js/jquery-3.0.0.min.js}"></script>
+	<script th:src="@{/js/custom.js}"></script>
+</head>
+
+<!-- body -->
+<!---------------헤더넣기 -------------->
+
+<body class="main-layout inner_page">
+
+    <!-- 게시판 시작 -->
+
+    <div class="container">
+        <h1><strong>FAQ</strong></h1><br><br><br>
+        <div class="wrapper">
+            <!-- 검색창 -->
+            <div class="row height d-flex justify-content-center align-items-center">
+
+                <div class="col-md-6">
+                    <div class="form" id="searchBox">
+                        <i class="fa fa-search"></i>
+                        <input type="text" id="search" name="searchWord" class="form-control form-input" placeholder="검색">
+                    </div>
+                </div>
+            </div>
+        </div><!-- end .wrapper -->
+    </div><!-- end .container -->
+
+
+    <!-- 게시글 목록 -->
+    <div class="container">
+        <div class="row">
+            <div style="width:100%; margin:0;" id="result">
+            </div><!-- end #result -->
+		    <!-- 글쓰기 버튼 : 로그인 인증받은 사용자만 접근 가능 sec:authorize="isAuthenticated()"-->
+		    <br>
+		    <div class="write" sec:authorize="isAuthenticated()">
+		        <a th:href="@{/boardWrite}" id="writeBtn">글쓰기</a>
+		    </div><!-- end .write -->
+        </div><!-- end .row -->
+        <br><br><br>
+    </div><!-- //content-->
+</body><!-- 게시판 끝 -->
+</html>

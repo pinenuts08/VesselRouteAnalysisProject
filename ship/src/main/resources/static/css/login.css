@@ -1,0 +1,25 @@
+/*For font-awesome icons in Placeholder*/
+.placeicon {
+    font-family: fontawesome;
+}
+#bodyWrapper {
+    margin-top: 50px;
+
+}
+.custom-control-label::before {
+    background-color: #dee2e6;
+}
+#naverLogin {
+    width: 160px;
+    margin-left: 21px;
+}
+
+#naverFont {
+    color:white;
+}
+
+#loginWrapper{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 50px;
+}

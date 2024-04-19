@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Contact us</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+      <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/custom.js"></script>
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+   <!-- responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   
+   <!-- awesome fontfamily -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      	<link rel="stylesheet" href="css/index.css">
+	
+	<!-- 메뉴 css -->
+	<link rel="stylesheet" href="css/menu_black.css">
+	<style>
+.titlepage {
+    padding-bottom: 40px;
+}
+/* 현재페이지 이름 */
+h1 {
+    display: inline-block;
+    text-align: center;
+    margin: 48px 0 -4px 670px;
+    font-size: 35px;
+    border-bottom: 5px solid navy;
+}
+
+/* 소개글 */
+p {
+    margin: 0px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+}
+
+/* 입력창 */
+.main_form .contactus {
+    border: inherit;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 51px;
+    background: #dbdada;
+    color: #969494;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 10px;
+}
+
+
+.main_form .textarea {
+    border: inherit;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #dbdada;
+    color: #969494;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 15px 15px 0 15px;
+    border-radius: 0;
+    height: 96px;
+    border-radius: 10px;
+}
+
+
+.main_form .send_btn {
+    font-size: 17px;
+    transition: ease-in all 0.5s;
+    background-color: navy;
+    color: #fff;
+    height: 47px;
+    line-height: 49px;
+    max-width: 216px;
+    width: 100%;
+    display: block;
+    border-radius: 61px;
+    margin-top: 10px !important;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+	</style>
+
+    <script>
+        function showAlert() {
+            alert('정상적으로 접수되었습니다.');
+        }
+    </script>
+</head>
+<!-- body -->
+<body>
+<header>
+		<!-- header inner -->
+		<div class="head-top">
+
+			<div class="container-fluid">
+				<div class="row d_flex">
+					<div class="navbar_mega">
+					<!-- class="col-sm-3" -->
+						<!--로그인, 메뉴 버튼 오른쪽 정렬-->
+						<div class="logo">
+							<!--로고-->
+							<a th:href=@{/} style="padding:0px;"><img th:src="@{/images/black_logo.png}" class="logoimg"></a>
+						</div> 
+					
+						<a th:href=@{/about} style="font-size:20px; color:rgb(9, 9, 146); font-weight:bold;"> About us </a>
+						
+						<div class="subnav">
+							<button class="subnavbtn">Service <i class="fa fa-caret-down"></i></button>
+							<div class="subnav-content">
+								<a th:href=@{/serviceinfo}> 서비스 정보 </a>
+								<a th:href=@{/subscribe}> 구독하기 </a>
+								<a th:href=@{/cargoeye}> CargoEye </a>
+							</div>
+						</div>
+						<div class="subnav">
+							<button class="subnavbtn">Information <i class="fa fa-caret-down"></i>
+							</button>
+							<div class="subnav-content">
+								<a th:href=@{/exchange}>환율 정보</a> 
+								<a th:href=@{/weather}>날씨 정보</a> 
+								<a th:href=@{/shipInfo}>부대비용</a> 
+								<a th:href=@{/schedule}>선박 스케줄</a>
+							</div>
+						</div>
+						<div class="subnav">
+							<button class="subnavbtn">Customer <i class="fa fa-caret-down"></i>
+							</button>
+							<div class="subnav-content">
+								<a th:href=@{/boardList}>자유게시판 </a> <!-- 하민 -->
+								<a th:href=@{/marine_news}>해운뉴스</a>  <!-- 혜민 -->
+								<a th:href=@{/contact}>Contact us</a> 
+								
+							</div>
+						</div>
+						<div class="subnav login_cargoeye">
+							<!--상단메뉴아이콘 <img class="openbtn" src="images/menu_btn.png">--> 
+							
+							<a th:href=@{/cargoeye} >
+							<img th:src="@{/images/logo1.png}" style="width:28px; margin-bottom: 5px;">
+								<span style="padding-left:0px;">CargoEye</span></a>					
+						</div>						
+						</div>			
+					</div><!-- .navbar_mega-->	
+					<!-- end ._cargoeye-->
+				</div>
+				<!-- end .login+cargoeye -->
+			</div>
+
+			<a th:href=@{/login}>
+				<i class="fa fa-user" aria-hidden="true"  style="top: 15px; right: 15px;"> Login</i>	
+			</a>
+	</header>
+
+<hr style="margin-bottom: 0px !important;">
+   <!-- contact section -->
+   <div class="contact left_cross_right" style="background-color: whitesmoke !important;">
+   
+	<h1><strong>Contact us</strong></h1><br><br><br>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage text_align_left">
+                  
+                  <br>
+                  <p>자사에 궁금한 점이 있거나, 계약 관련 문의는 아래 폼을 작성해주시면 빠른 시일 내에 답변드리겠습니다.<br>
+                     저희는 고객님의 문의에 최선을 다해 신속히 대응하고, 꼼꼼한 답변을 드릴 수 있도록 노력하고 있습니다.<br>
+                      언제든지 문의해주시면 감사하겠습니다. 24시간 이내에 회신해드리겠습니다. </p>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <form id="request" class="main_form">
+                  <div class="row">
+                     <div class="col-md-12 ">
+                        <input class="contactus" placeholder="성함" type="type" name="Name">
+                     </div>
+                     <div class="col-md-6">
+                        <input class="contactus" placeholder="Email" type="type" name="Email">
+                     </div>
+                     <div class="col-md-6">
+                        <input class="contactus" placeholder="휴대폰번호" type="type" name="Phone Number">
+                     </div>
+                     <div class="col-md-12">
+                        <textarea class="textarea" placeholder="문의사항" type="Message"></textarea>
+                     </div>
+                     <div class="col-md-12">
+                        <button class="send_btn" onclick="showAlert()">확인</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</body>
+
+</html>

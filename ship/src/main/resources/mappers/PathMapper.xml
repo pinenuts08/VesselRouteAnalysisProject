@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.kdigital.project.mapper.MapMapper">
+	<!-- 문장 끝에 ; 쓰지 않게 주의!!!! -->
+	<!-- 태그좀 잘 보고 쓰기!!!!!!! -->
+	<!-- insert, update, delete는 반환타입X -->
+	<!-- 동적 쿼리 : if문같은 로직이 들어갈 수 있도록 해주는 것. MyBatis에서 제공해줌 -->
+	<!-- if문에서 test=""안에 조건을 넣으면 됨. 조건이 참일 때 if태그 사이에 쓴 것 실행 -->
+	
+	<!-- vsl_id로 일반항로 조회 -->
+	<!-- &lt; : < -->
+	<select id="searchNormalPath" resultType="NormalPath" parameterType="map">
+		select * from normalpath
+		where vsl_id like '%'|| #{vsl_id} || '%'
+		<if test="hour > 0">
+			and 
+				<![CDATA[
+					vsl_timestamp < (
+					select min(vsl_timestamp)
+					from normalpath
+					where vsl_id like '%'||#{vsl_id}||'%')
+					+ (INTERVAL '1' HOUR * #{hour})
+				]]>
+		</if>
+		order by vsl_timestamp
+	</select>
+	
+	<!-- pathname으로 표준항로 조회 -->
+	<select id="searchStdPath" resultType="StdPath" parameterType="map">
+		select * from 
+			<if test="pathname == 'KH'">kh_stdpath</if>
+			<if test="pathname == 'VK'">vk_stdpath</if>
+			<if test="pathname == 'KJ'">kj_stdpath</if>
+		where pathname = #{pathname}
+		and path_num = #{path_num}
+		order by path_num, part
+	</select>
+	
+	<!-- pathname, pathnum으로 표준항로 조회, 전달받은 part부터 끝까지 -->
+	<select id="searchSimilarPath" resultType="StdPath" parameterType="map">
+		select * from 
+			<if test="vsl_id == 'HK'">kh_stdpath</if>
+			<if test="vsl_id == 'VT'">vk_stdpath</if>
+			<if test="vsl_id == 'JP'">kj_stdpath</if>
+		where path_num = #{pathnum}
+		and part > #{part}
+		order by path_num, part
+	</select>
+</mapper>

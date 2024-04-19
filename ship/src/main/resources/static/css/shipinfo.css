@@ -1,0 +1,406 @@
+@charset "utf-8";
+/**
+ * ! Bstones template v0.1
+ * @comment     customize v0.1
+ * @author      MCShin
+ * @Write		2016-03-04
+ * @Modify		2016-03-18
+ */
+
+/* ==========================================================================
+   기본 스타일 리셋
+   ========================================================================== */
+* {margin:0;padding:0;border:0;outline:0;}
+html {font-family:'Malgun Gothic','맑은고딕','Modern H Light','돋움','Dotum','Tahoma',"Arial",'AppleGothic','sans-serif';-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,textarea,select,button {font-family:'Malgun Gothic','맑은고딕','Modern H Light','돋움','Dotum','Tahoma',"Arial",'AppleGothic','sans-serif';}
+img,video {max-width:100%;}
+ul,ol,dl {list-style:none;}
+select {height:20px;font-size:12px;line-height:20px;}
+textarea {font-size:12px;line-height:14px;border:1px solid #c0c0c0;}
+
+/* ==========================================================================
+   HTML5 display 정의
+   ========================================================================== */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {display:block;}
+audio,canvas,video {display:inline-block;vertical-align:baseline;*display:inline;*zoom:1;}
+audio:not([controls]) {display:none;height:0;}
+[hidden],template {display:none;}
+
+/* ==========================================================================
+   링크관련
+   ========================================================================== */
+a {text-decoration:none;color:#000;background-color:transparent;}
+a:active,a:hover {outline:0;text-decoration:none;}
+
+/* ==========================================================================
+   Text-level 문법
+   ========================================================================== */
+b,strong {font-weight:bold;}
+dfn,em,address {font-style:normal;}
+
+/* ==========================================================================
+   SVG 관련
+   ========================================================================== */
+svg:not(:root) {overflow:hidden;}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+label {vertical-align:middle;}
+button,input,select,textarea {vertical-align:middle;}
+button {overflow:visible;cursor:pointer;}
+button,select {text-transform:none;}
+button,html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance:button;cursor:pointer;}
+button[disabled],html input[disabled] {cursor:default;}
+button::-moz-focus-inner,input::-moz-focus-inner {border:0;padding:0;}
+input,button {line-height:normal;}
+input[type="checkbox"],input[type="radio"] {box-sizing:border-box;padding:0;}
+input[type="checkbox"] {width:12px;height:12px;}
+input[type="text"],input[type="password"] {height:18px;margin:0;border:1px solid #c0c0c0;font-size:12px;line-height:14px;color:#666;}
+input[type="search"] {-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance:none;}
+textarea {overflow:auto;vertical-align:top;}
+
+/* ==========================================================================
+   테이블 관련
+   ========================================================================== */
+table {border-collapse:collapse;border-spacing:0;empty-cells:show;}
+td,th {padding:0;}
+
+
+/*									basic*/
+
+/**
+ * ! Bstones template v0.1
+ * @comment     customize v0.1
+ * @author      MCShin
+ * @Write		2016-03-04
+ * @Modify		2016-03-15
+ */
+
+/* ==========================================================================
+   기본 스타일
+   ========================================================================== */
+html,button,input,select,textarea {color:#222;} 
+h1,h2,h3,h4,h5,h6 {font-size:100%;line-height:1.2;}
+i,em,address {font-style:normal;font-weight:normal;}
+table {width:100%;table-layout:fixed;}
+::-moz-selection {background:#b3d4fc;text-shadow:none;} 
+::selection {background:#b3d4fc;text-shadow:none;}
+fieldset {border:0;margin:0;padding:0;}
+textarea {resize:vertical;}
+i,em,address {font-style:normal;font-weight:normal;}
+
+/* ==========================================================================
+   헬퍼 클래스들
+   ========================================================================== */
+.hidden {display:none !important;visibility:hidden;} 
+.visuallyhidden {border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto;}
+.invisible {visibility:hidden;}
+.clearfix:before,.clearfix:after {content:"";display:table;}
+.clearfix:after {clear:both;}
+.clearfix {*zoom:1;}
+.ir-pm {text-indent:-9999px;display:block;}
+.ir-wa {display:block;position:relative;z-index:-1;}
+.blind,legend,hr,caption {display:block;overflow:hidden;position:absolute;/*top:0;*/left:-1000em;}
+.center-block {display:block;margin-right:auto;margin-left:auto;}
+.pull-right {float:right !important;}
+.pull-left {float:left !important;}
+.show {display:block !important;}
+.hidden {display:none !important;visibility:hidden !important;}
+.text-overflow {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;}
+
+/* ==========================================================================
+   jQuery 사용 시 필요한 CSS
+   ========================================================================== */
+/* layer popup */
+.layer_pop {display:none;}
+.dim {background:#000;position:absolute;z-index:100;display:none;}
+
+/* ==========================================================================
+   반응형 필요시 작성 할 영역
+   ========================================================================== */
+@media only screen and (max-width:768px) {      /* (35em) 560px*/
+    /* 태블릿 영역 */
+}
+@media only screen and (max-width:480px){
+    /* 모바일 (필요시 확장) */
+}
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* 고해상도 기기용 스타일 영역 */
+}
+
+/* ==========================================================================
+   프린트용 스타일 ( 인쇄 필요시만 )
+   ==========================================================================*/
+@media print {
+	
+}
+
+/*										common*/
+
+/**
+ * reset
+ */
+html, body {height:100%;}
+body {font-family:'Noto Sans'; font-weight:200; font-size:16px; line-height:1.5; color:#000;}
+a {color:inherit; display:block; width:auto; height:auto;}
+h1, h2, h3, h4, h5, h6 {line-height:1.2;}
+button[type=button], input[type=text], input[type=radio], input[type=checkbox], select, textarea {background-color:transparent; font-family:inherit; font-size:inherit; line-height:inherit; color:inherit;}
+
+
+/**
+ * helper class
+ */
+.text-right {text-align:right;}
+.text-left {text-align:left;}
+/**
+ * layout
+ */
+#wrap {min-width:1280px; height:100%; margin:0 auto;}
+
+/**
+* header
+*/
+#header {position:fixed; z-index:10000; top:0; left:0; border-bottom: 2px solid #145fb3; width:100%; min-width:1280px; height:117px; background-color:#fff;}
+
+
+#header .inner_header {max-width:1280px; margin:0 auto;}
+/* logo */
+#header .logo {float:left; padding-top:52px;}
+/* gnb */
+#header .gnb {position:absolute; left:50%; width:755px; margin-left:-426px;}
+#header .gnb > li {float:left; padding-top:28px;  width:145px; height:89px; font-weight:400; }
+#header .gnb > li > a {display:block; position:relative; height:89px; text-align:center;font-size:18px; line-height:89px; color:#000;}
+#header .gnb > li:hover > .wrap_lnb {display:block;}
+#header .gnb > li > a.changed:after {display:block; position:absolute; bottom:0; left:65px; width:18px; height:9px; content:'';  background:url(../images/common/bg_lnb_tri.gif) no-repeat; }
+/* gnb 현재 페이지일 경우 클래스명 on 추가 */
+#header .gnb > li.on > a {color:#145fb3;}
+
+#header .dart {float:left; padding-left:817px; width:145px; height:89px; }
+#header .dart > li {float:left; padding-top:28px;  width:145px; height:89px; font-weight:400; }
+#header .dart > li > a {display:block; position:relative; height:89px; text-align:center;font-size:18px; line-height:89px; color:#000;}
+#header .dart > li:hover > .wrap_lnb {display:block;}
+#header .dart > li.on > a {color:#145fb3;}
+
+/* 언어선택 */
+/* 마우스오버 시 클래스명 active 추가 */
+#header .util {float:right; padding-top:28px; width:192px; height:89px;}
+#header .util .lang {float:left; padding:29px 0 0 14px;}
+#header .util .lang .lang_list {overflow:hidden; position:relative; width:26px; height:26px; border:2px solid #145fb3; border-radius:18px; background-color:#fff; font-size:12px; font-weight:700; text-align:center; color:#145fb3;}
+#header .util .lang .lang_list.active {height:94px;}
+#header .util .lang .lang_list li {line-height:17px; padding:2px 0;}
+#header .util .lang .lang_list li:first-child {padding:4px 0 2px;}
+#header .util .ekmtc {float:left; width:119px; height:30px; padding:29px 0 0  15px;}
+
+
+/* lnb */
+/* 최대 1280px에서 중앙 정렬 */
+/* lnb 배경 */
+#header .bg_lnb {position:absolute; top:117px; display:block; height:0; width:100%; min-width:1280px; background:#145fb3;}
+
+/* lnb 배경 내려옴 */
+#header .bg_lnb.active {position:absolute; top:117px; display:block; height:60px; width:100%; min-width:1280px; background:#145fb3; z-index:-1;
+
+    animation: LnbDown .3s;
+    animation-fill-mode: both
+}
+@keyframes LnbDown {
+    from {
+       height:0;
+        opacity:0
+    }
+    to {
+        height:60px;
+        opacity:1
+    }
+
+}
+/* lnb 배경 유지됨 */
+#header .bg_lnb.on {position:absolute; top:117px; display:block; height:60px; width:100%; min-width:1280px; background:#145fb3; z-index:-1;}
+#header .wrap_lnb {float:left; width:100%; margin: 0 auto; text-align:center; transition:all 1s;}
+#header .wrap_lnb ul {display:none; max-width:1280px; margin:0 auto;}
+#header .wrap_lnb ul.active {display:block;}
+#header .wrap_lnb ul.down  { display:block;}
+#header .wrap_lnb.lnb {}
+#header .wrap_lnb .lnb li {display:inline-block; padding:21px 20px; color:#9eccff;}
+#header .wrap_lnb .lnb li:hover > a {color:#fff;}
+
+
+/**
+ * footer
+ */
+#footer {height:214px; background-color:#e7e7e7;}
+#footer .inner_footer {max-width:1280px; margin:0 auto;}
+#footer .inner_footer .area_txt {float:left; width:853px;}
+#footer .inner_footer .area_link {float:right;}
+/* 왼쪽 텍스트 */
+#footer .wrap_shrotcut .list_shortcut {margin:45px 0 30px;}
+#footer .wrap_shrotcut .list_shortcut li {float:left; display:inline-block; padding:0 10px; background:url(../images/common/bg_shortcut.gif) no-repeat left; font-size:14px; font-weight:400;  line-height:14px; color:#777;}
+#footer .wrap_shrotcut .list_shortcut li:first-child {padding-left:0; background:none;}
+#footer .wrap_address {clear:left; margin-bottom:26px;}
+#footer .wrap_address .address {font-size:13px; line-height:23px; color:#aaa;}
+#footer .copyright {font-size:14px; font-weight:400; line-height:14px; color:#aaa;}
+/* 오른쪽 패밀리 사이트 링크 */
+#footer .area_link {margin-top:46px;}
+#footer .area_link .link {float:left; margin-right:10px; width:98px; height:37px; color:#777; background:#bfbfbf; font-size:13px; font-weight:400; line-height:37px; text-align:center; }
+#footer .area_link .wrap_family {float:left; position:relative; background:#fff;}
+#footer .area_link .wrap_family .family_site {border:2px solid #c4c4c4;  padding-left:14px; width:142px; height:33px; background:url(../images/common/bg_familysite.gif) no-repeat 135px center; background-color:transparent; font-size:13px; font-weight:400; line-height:33px; color:#c4c4c4; cursor:pointer;}
+/* 패밀리사이트 클릭한 경우 클래스명 open 추가 */
+#footer .area_link .wrap_family .list_family {display:none; position:absolute; bottom:35px; margin-top:-2px; border:2px solid #c4c4c4; border-bottom:none;  padding-left:14px; width:142px; background:#fff;font-size:13px; font-weight:400; line-height:33px; color:#c4c4c4; cursor:pointer;}
+#footer .area_link .wrap_family .list_family.open {display:block;}
+
+
+/**
+* snb
+*/
+.page_common .box_intro .bg_snb {overflow:hidden; position:absolute; left:0; width:100%;}
+.page_common .box_intro .wrap_snb {position:relative; left:0; bottom:0; height:54px; border-top:1px solid rgba(255, 255, 255, .4);  max-width:1920px; width:100%; min-width:1280px;}
+.page_common .box_intro .snb {margin:0 auto;}
+.page_common .box_intro .snb li {float:left; margin:0 61px; height:54px; color:#fff; }
+.page_common .box_intro .snb li.on a {background:url(../images/common/bg_snb_on.png) no-repeat center bottom;}
+.page_common .box_intro .snb li.on a:before {display:block; position:absolute; top:0; left:0; width:100%; height:100%; border-top:2px solid #fff; content:'';}
+.page_common .box_intro .snb li a {position:relative; padding:15px 0; height:auto;}
+.page_common .box_intro .snb:after {display:block; clear:both; height:0; content:'';}
+/* snb 메뉴 개수에 따라 type5와 type2 */
+/* snb 메뉴가 2개인 경우 type2 클래스명 추가, 해운정보 > snb는 클래스명 .type_eng 추가 */
+.page_common .box_intro .snb.type5 {width:1020px;}
+.page_common .box_intro .snb.type2 {width:518px;}
+.page_common .box_intro .snb.type2 li {margin:0 24px; padding:0 48px;}
+.page_common .box_intro .snb.type3 {width:665px;}
+.page_common .box_intro .snb.type3 li {margin:0 70px;}
+.page_common .box_intro .snb.type9 {width:1344px;}
+.page_common .box_intro .snb.type9 li {margin:0 30px;}
+.page_common .box_intro .snb.type_eng {width:623px; }
+.page_common .box_intro .snb.type_eng li {margin:0 24px; padding:0 48px;}
+/* 메뉴 추가될 수 있는 서비스항로 snb */
+.page_common .box_intro .wrap_snb_route {border-top:1px solid rgba(255, 255, 255, .4);}
+.page_common .box_intro .snb_route { display:table; margin:0; padding:0; table-layout:fixed; width:100%;text-align:center;}  
+.page_common .box_intro .snb_route:before {display:table-cell;content: '';}
+.page_common .box_intro .snb_route:after {display:table-cell;content: '';}
+.page_common .box_intro .snb_route li {display:table-cell; height:55px; color:#fff; }
+.page_common .box_intro .snb_route li a {display:inline-block; padding:15px 0;}
+.page_common .box_intro .snb_route li.on a {background:url(../images/common/bg_snb_on.png) no-repeat center bottom;}
+.page_common .box_intro .snb_route li.on .bar {padding-top:13px; border-top:2px solid #fff; content:'';}
+.page_common .box_intro .snb_route li a {position:relative; width:100%;}
+
+
+/**
+* 서브 
+*/
+/* 서브페이지 공통 */
+/* #header 고정으로 padding-top:117px 고정 */
+.page_common {padding-top:117px; margin:0 auto; max-width:1920px; min-width:1280px;}
+.page_common .box_intro {position:relative; height:206px; text-align:center;}
+.page_common .box_intro .txt_location {font-size:34px; font-weight:500; color:#fff; line-height:151px; letter-spacing:30px;}
+/* [P] snb가 없는 회사소개 > txt_location에는 클래스명 .lh305 추가 */
+.page_common .box_intro .txt_location.lh305 {line-height:206px;}
+
+.content {margin:0 auto; padding:100px 0; max-width:1280px;}
+
+
+/* *
+* 각 서브 페이지의 snb 배경
+*/
+/* 회사소개*/
+.page_introduction {background:url(../images/common/bg_introduction.jpg) no-repeat 50% 117px;}
+/* 서비스항로 */
+.page_route {background:url(../images/common/bg_route.jpg) no-repeat 50% 117px;}
+
+/* 채용정보*/
+.page_recruit {background:url(../images/common/bg_recruit.jpg) no-repeat 50% 117px;}
+
+/* 해운정보 */
+.page_infomation {background:url(../images/common/bg_infomation.jpg) no-repeat 50% 117px;}
+/* 네트워크 */
+.page_network {background:url(../images/common/bg_network.jpg) no-repeat 50% 117px;}
+
+
+
+/**
+* 개인정보취급방침, 이메일 부단수집거부
+*/
+.page_policy {padding:15px; margin:0 auto; min-width:300px!important;}
+.page_policy .sub_title {padding-top:20px; font-size:18px;}
+.page_policy .title {text-decoration:underline; font-size:28px; color:#145fb3;}
+.page_policy .inner {padding:30px 15px; font-size:14px; color:#333; font-weight:300; line-height:1.4;}
+.page_policy .inner .indent {padding-left:14px; width:20px; display:inline-block;}
+.page_policy .inner .wrap_indent {padding-left:12px;}
+.page_policy .inner .wrap_indent .m-10 {margin-left:-14px; padding-right:4px;}
+.page_policy .inner h2 {padding:18px 0 14px; font-size:16px;}
+.page_policy .inner .m-6 {margin-left:-6px;}
+.page_policy .inner .p-16 {padding-left:16px;}
+.page_policy .inner .last {margin-top:40px;}
+
+/* 에러페이지 */
+.content_error {padding:50px 0 100px; text-align:center;}
+.content_error .logo {width:50%; margin:100px auto;}
+.content_error .title {padding:0 60px; font-size:28px; color:#145fb3; font-weight:700;}
+.content_error .desc {padding:18px 4% 100px; font-size:20px; color:#333; line-height:1.8;}
+
+/*					ship*/
+
+/**
+* 해운정보
+*/
+.page_information {background:url(../images/common/bg_information.jpg) no-repeat 50% 117px;}
+
+
+/**
+ *
+ Vessel information
+ */
+.content_vessel .box_info {text-align:center;}
+.content_vessel .box_info .tit {padding-bottom:26px; font-size:42px; font-weight:500; color:#145fb3;}
+.content_vessel .box_info .desc {font-size:22px;}
+.content_vessel .box_info .item_list {width:860px; margin:50px auto 50px;} 
+.content_vessel .box_info .item_list li {float:left; padding-top:49px; margin:0 20px; width:175px; height:175px; border-radius:85px; background:#145fb3; text-align:center; box-sizing:border-box;}
+.content_vessel .box_info .item_list .item {padding-bottom:15px; font-size:16px; color:#7fbbff; line-height:16px;}
+.content_vessel .box_info .item_list .num {font-size:34px; font-weight:700; line-height:34px; color:#fff;}
+/* 선박이미지 */
+.content_vessel .box_img {float:left; width:896px; height:424px; background:#e0e0e0}
+.content_vessel .box_img .img {display:none;}
+.content_vessel .box_img .img.first {display:block;}
+/* 바로 보이는 첫번째이미지, 첫번째선박정보 는 클래스명 first */
+/* 선박선택 */
+.content_vessel .box_vessel {float:left; margin-left:4px; padding:20px; width:340px; height:385px; background:#f0f0f0;}
+.content_vessel .box_vessel .tit {padding-bottom:15px; font-size:20px; font-weight:500; line-height:20px;}
+.content_vessel .box_vessel .list_vessel {padding:10px 0;  border:3px solid #145fb3; width:314px; height:324px; background:#fff; overflow-y:auto;}
+.content_vessel .box_vessel .list_vessel li {height:36px; line-height:36px; color:#999; text-indent:14px; font-weight:500;}
+/* 선박선택 클릭, 마우스오버 시 색상변경 */
+.content_vessel .box_vessel .list_vessel li.on,
+.content_vessel .box_vessel .list_vessel li:hover {color:#145fb3;}
+/* 선박정보 */
+.content_vessel .wrap_desc {display:none; margin-top:50px; border-top:1px solid #e0e0e0;}
+.content_vessel .wrap_desc:after  {display:block; content:''; clear:both;}
+.content_vessel .wrap_desc.first {display:block;}
+.content_vessel .wrap_desc .vessel_tit {margin-top:50px; padding-bottom:24px; font-size:24px; font-weight:500; line-height:24px; color:#145fb3;}
+.content_vessel .wrap_desc .vessel_desc {float:left; width:424px; line-height:37PX;}
+.content_vessel .wrap_desc .vessel_desc:after {display:block; content:''; clear:both;}
+.content_vessel .wrap_desc .vessel_desc dt {float:left; padding-left:13px; width:200px; background:url(../images/common/bg_branch_desc.gif) no-repeat left; font-weight:500; color:#333;}
+.content_vessel .wrap_desc .vessel_desc dd {float:left; clear:right; padding-left:15px; width:196px; font-weight:400; color:#777;}
+
+/**
+ *
+Container information
+ */
+
+.content_container .container_tit {padding-bottom:15px; font-size:24px; font-weight:500; color:#145fb3;}
+.content_container .wrap_desc {margin-bottom:50px;}
+.content_container .wrap_desc .box_img {float:left; margin-right:40px; width:437px; height:43
+7px;}
+.content_container .wrap_desc .tbl_container {float:left; width:803px; border-top:2px solid #333; border-bottom:1px solid #ccc;}
+.content_container .wrap_desc .tbl_container tr th:first-child {border-left:none;} 
+.content_container .wrap_desc .tbl_container .col_containder {width:14%;}
+.content_container .wrap_desc .tbl_container tr th {padding:11px 8px; font-weight:500; border-left:1px solid #ccc; font-size:15px;line-height: 18px;}
+.content_container .wrap_desc .tbl_container tr th:first-child {border-left:none;}
+.content_container .wrap_desc .tbl_container tr td:first-child {border-left:none;}
+.content_container .wrap_desc .tbl_container tr td {padding:0 10px; border-top:1px solid #ccc; border-left:1px solid #ccc; height:87px; text-align:center; color:#999;}
+.content_container .wrap_desc .tbl_container tbody tr td:first-child {color:#145fb3; font-weight:500;}
+.content_container .wrap_desc .cap {float:left; padding-top:20px; line-height:1.8; font-weight:400;}
+

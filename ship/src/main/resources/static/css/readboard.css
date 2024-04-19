@@ -1,0 +1,145 @@
+/* ---- Basic CSS reset ------------------------------------------------------ */
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.ck.ck-content.ck-editor__editable_inline> :first-child {
+    margin-top: 0;
+}
+
+/* ---- Styles of the demo page ------------------------------------------------------ */
+.editor-wrapper {
+    max-width: 66rem;
+    margin: 0 auto 2rem auto;
+}
+
+.header-wrapper {
+    padding: 1rem 2rem;
+}
+#submitBtn{
+    margin-top: 20px;
+    width:90px;
+    height:30px;
+    margin-left : 1010px;
+    background-color: #006d98;
+    color: white;
+    border-color: none;
+    border-radius: 8px; 
+         
+}
+h1 {
+   margin : 200px auto 0 auto;
+    /*margin-top: 40px;
+    margin-left: 1040px;
+    display: inline-block;*/
+    width: 250px;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 5px solid navy;
+}
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#titletext {
+   font-size: 1.1em;
+   margin-left: 10px;
+}
+
+#title {
+    width: 1028px;
+    height: 30px;
+    margin-left: 20px;
+}
+#titleArea {
+    margin-left: 2px;
+    margin-bottom: 30px;
+}
+
+.ck.ck-editor__editable_inline {
+    height: 500px;
+    border: 1px solid transparent;
+    overflow: auto;
+    padding: 0 var(--ck-spacing-standard);
+}
+.centered {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    width: 1170px;
+    padding: 30px 30px 40px 30px;
+    margin-bottom: 70px;
+    margin-top: 52px;
+}
+.btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    float: right;
+    margin-top: 30px;
+    border-radius: 5px; 
+    margin-bottom: 30px;
+}
+
+#name {
+   width: 538px;
+}
+#writer {
+   margin-left:10px;
+   font-size : 1.1em;
+   margin-bottom : 22px;
+}
+#writeContainer {
+   width : 1100px;
+}
+table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    
+table tr:nth-child(4) td {
+  height : 700px;
+}
+
+a {
+    padding: 15px;
+    display: block;
+    text-align: right;
+}
+tr:nth-child(3) td {
+      border-bottom: 1px solid gray;
+}
+#boldBorder {
+   text-align : right;
+}
+#btn {
+   margin-top: 20px;
+    width:90px;
+    height:30px;
+    margin-left : 1010px;
+    background-color: #006d98;
+    color: white;
+    border-color: none;
+    border-radius: 8px; 
+    float: right;
+   
+   
+
+ }
+

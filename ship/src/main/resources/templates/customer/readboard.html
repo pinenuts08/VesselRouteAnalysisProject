@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <meta charset="utf-8" />
+    <title>글쓰기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/readboard.css}">
+<!--     <link type="text/css" th:href="@{/css/sample.css}" rel="stylesheet" media="screen" /> -->
+
+    <!-- 자바스크립트 -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+      <style>
+  </style>
+</head>
+
+<body>
+    <!-- header -->
+
+    <!-- //header -->
+    <div class="wrapper">
+    <h1><strong>게시글</strong></h1><br><br><br>
+    <div class="centered">
+    <input type="hidden" name="boardseq" id="boardseq" th:value="${board.boardseq}">
+   <table>
+    <tr>
+      <td th:text="${board.title}">글제목</td>
+    </tr>
+    <tr>
+       <td id="memberid" th:text="${board.memberid}">작성자</td>
+    </tr>
+    <tr>
+       <td id="boldBorder" th:text="${board.regdate}">작성일</td>
+    </tr>
+    <tr>
+    	<td>
+			<pre>[[${board.boardtext}]]</pre>
+		</td>
+    </tr>
+  </table>
+  </div >
+  <div id="boardList">
+     <a th:href="@{/boardList}">글목록</a>
+  </div>
+  <span th:if="${#authentication.name==board.memberid}">
+  	<a id="btn" th:href="@{/deleteboard(boardseq=${board.boardseq})}">글 삭제</a>
+  </span>
+  </div>
+</body>
+
+</html>

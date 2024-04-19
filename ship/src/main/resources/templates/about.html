@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Fables">
+    <meta name="author" content="Enterprise Development">
+    <link rel="shortcut icon" th:href="@{assets/custom/images/shortcut.png}">
+
+    <title> 팀구성원</title>
+
+    <!-- animate.css-->
+    <link th:href="@{/css/animate.min.css}" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link th:href="@{/css/bootstrap11.min.css}" rel="stylesheet">
+    <link th:href="@{/css/bootstrap-4-navbar.css}" rel="stylesheet">
+
+    <!-- FABLES CUSTOM CSS FILE -->
+    <link th:href="@{/css/custom11.css}" rel="stylesheet">
+	<!-- style css -->
+	<link rel="stylesheet" th:href="@{/css/index.css}">
+	<!-- 메뉴 css -->
+	<link rel="stylesheet" th:href="@{/css/menu_black.css}">
+	<!-- awesome fontfamily -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<style>
+    .col-6 col-md-3 mb-4 mb-lg-5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #sayname{
+    color :#3f51b5;
+    font-size: 39px;
+    }
+ 
+.w-100{
+	background : navy;
+	border-radius: 200px;
+	width: 200px !important;
+}
+.my-1 {
+    padding-left: 5px;
+    font-size: 22px;
+    text-align: left;
+}
+.font-30 {
+    font-size: 22px;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.mt-3, .my-3 {
+    margin-top: 0rem!important;
+}
+.shine-effect{
+background-color: whitesmoke;
+}
+.card-body{
+background-color: whitesmoke;
+}
+header {
+    background: white;
+    width: 100%;
+    height: 116px;
+    z-index: 9;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 50px;
+}
+.container {
+    width: 1100px;
+    }
+</style>
+<script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+<script>
+
+</script>
+
+
+
+<body style="background-color: whitesmoke;">
+	<header>
+		<!-- header inner -->
+		<div class="head-top">
+			<div class="container-fluid">
+				<div class="row d_flex">
+					<div class="navbar_mega">
+						<!-- class="col-sm-3" -->
+						<!--로그인, 메뉴 버튼 오른쪽 정렬-->
+						<div class="logo">
+							<!--로고-->
+							<a th:href=@{/} style="padding:0px;"><img th:src="@{/images/black_logo.png}" class="logoimg"></a>
+						</div>
+
+						<a th:href=@{/about} style="font-size: 20px; color: rgb(9, 9, 146); font-weight: bold;">
+							About us </a>
+
+						<div class="subnav">
+							<button class="subnavbtn">
+								Service <i class="fa fa-caret-down"></i>
+							</button>
+							<div class="subnav-content">
+								<a th:href=@{/serviceinfo}> 서비스 정보 </a> <a th:href=@{/subscribe}>
+									구독하기 </a> <a th:href=@{/cargoeye}> CargoEye </a>
+							</div>
+						</div>
+						<div class="subnav">
+							<button class="subnavbtn">
+								Information <i class="fa fa-caret-down"></i>
+							</button>
+							<div class="subnav-content">
+								<a th:href=@{/exchange}>환율 정보</a> <a th:href=@{/weather}>날씨
+									정보</a> <a th:href=@{/shipInfo}>부대비용</a> <a th:href=@{/schedule}>선박
+									스케줄</a>
+							</div>
+						</div>
+						<div class="subnav">
+							<button class="subnavbtn">
+								Customer <i class="fa fa-caret-down"></i>
+							</button>
+							<div class="subnav-content">
+								<a th:href=@{/boardList}>자유게시판 </a>
+								<!-- 하민 -->
+								<a th:href=@{/marine_news}>해운뉴스</a>
+								<!-- 혜민 -->
+								<a th:href=@{/contact}>Contact us</a>
+
+							</div>
+						</div>
+						<div class="subnav login_cargoeye">
+							<!--상단메뉴아이콘 <img class="openbtn" src="images/menu_btn.png">-->
+
+							<a th:href=@{/cargoeye}> <img th:src="@{/images/logo1.png}"
+									style="width: 28px; margin-bottom: 5px;"> <span
+									style="padding-left: 0px;">CargoEye</span></a>
+						</div>
+					</div>
+				</div>
+				<!-- .navbar_mega-->
+				<!-- end ._cargoeye-->
+			</div>
+			<!-- end .login+cargoeye -->
+		</div>
+
+		<a th:href=@{/login}> <i class="fa fa-user" aria-hidden="true" style="top: 15px; right: 15px;"> Login</i>
+		</a>
+	</header>
+	
+<hr style="margin-bottom: 0rem!important; margin-top: 0rem!important;">
+
+    <!------------------------------------------------------>
+
+    <div class="container py-3 py-lg-5" >
+        <div class="fables-team my-3">
+            <h1 style="width: 250px;"><strong>WE ARE TEAM</strong></h1><br><br><br>	
+        </div>
+
+	<div class="row">        
+            <div class="col-6 col-md-3 mb-4 mb-lg-5">
+                <div class="card-body" style="text-align: right; padding-right:0;">
+                <div  style="text-align: 1px;">
+                    <h5 style="padding-top:-90px;"><a href="#" id = "sayname" class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name" >
+                    <span style="font-size: 20px; height:10px;">Leader</span></a>
+                    </h5>
+                    <h5><a href="#" id = "sayname" class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name">
+                    박에스더</a>
+                    </h5>
+                </div>
+                    <p class="font-30 fables-forth-text-color my-1">                           
+                   	Project Manage<br>Data Analysis<br>Front-End</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4 mb-lg-5" >
+                <div
+                    class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">
+
+                    <div class="image-container shine-effect" >
+                        <a th:href="@{/}"><img class="w-100" src="images/esther.png" alt="Card image cap"></a>
+                    </div>
+
+                </div>
+            </div>
+
+             <div class="col-6 col-md-3 mb-4 mb-lg-5">
+                <div
+                    class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">
+                    <div class="image-container shine-effect">
+                        <a th:href="@{/}"><img class="w-100" th:src="@{mages/harin.png}" alt="Card image cap"></a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-6 col-md-3 mb-4 mb-lg-5">
+                <div class="card-body" style="text-align: left;">
+                                    <h5 style="padding-top:-90px;"><a th:href="@{/}" id = "sayname" class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name" >
+                    <span style="font-size: 20px; height:10px;">Main Coder</span></a>
+                    </h5>
+	                  <h5><a th:href="@{/}"
+	                          id = "sayname" class="font-20 semi-font fables-forth-text-color 
+	                          fables-second-hover-color team-name">김하린</a>
+	                  </h5>
+	                  <p class="my-1 fables-forth-text-color ">                           
+	                 	Data Analysis<br>Back-End</p>
+	              </div>
+            </div>
+           
+        </div>
+
+   
+   	<div class="row" style="margin-top: 71px;">        
+            <div class="col-6 col-md-4 mb-4 mb-lg-5">
+                <div
+                    class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">
+
+                    <div class="image-container shine-effect" >
+                        <a th:href="@{/}"><img class="w-100" th:src="@{images/hamin.png}" alt="Card image cap"></a>
+                                            <h5 style="padding-top:-90px;"><a th:href="@{/}" id = "sayname" class="font-20 semi-
+ fables-forth-text-color fables-second-hover-color team-name" >
+                    <span style="font-size: 20px; height:10px;">Coder</span></a>
+                    </h5>
+                        <h5><a th:href="@{/}" id = "sayname" class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name">김하민</a>
+	                  </h5>
+	                  <p class="my-1 fables-forth-text-color " style="text-align: center;">                           
+	                 	Front-End</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6 col-md-4 mb-4 mb-lg-5">
+                <div
+                    class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">
+
+                    <div class="image-container shine-effect" >
+                        <a th:href="@{/}"><img class="w-100" src="images/hyebin.png" alt="Card image cap"></a>
+                         <h5 style="padding-top:-90px;"><a th:href="@{/}" id = "sayname" class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name" >
+                    	<span style="font-size: 20px; height:10px;">Coder</span></a>
+                    </h5>
+                        <h5><a th:href="@{/}" id = "sayname" class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name">최혜빈</a>
+	                  </h5>
+	                  <p class="my-1 fables-forth-text-color "style="text-align: center;">                       
+	                 	Web design</p>
+                    </div>
+
+                </div>
+            </div>
+             <div class="col-6 col-md-4 mb-4 mb-lg-5">
+                <div
+                    class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">
+
+                    <div class="image-container shine-effect" >
+                        <a th:href="@{/}"><img class="w-100" th:src="@{images/hyemin.png}" alt="Card image cap"></a>
+                                            <h5 style="padding-top:-90px;"><a th:href="@{/}" id = "sayname" class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name" >
+                    <span style="font-size: 20px; height:10px;">Coder</span></a>
+                    </h5>
+                        <h5><a th:href="@{/}" id = "sayname" class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name">하혜민</a>
+	                  </h5>
+	                  	                  <p class="my-1 fables-forth-text-color "style="text-align: center;">                             
+	                 	API developer</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+           
+        </div>   
+</div>
+  
+
+    <!--  푸터 -->
+
+
+    <!-- Start Footer 2 Background Image  -->
+    <div class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <a th:href="@{/}" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13">
+                        <img th:src="@{images/fables-logo.png}" alt="fables template" style="width: 127.89px; height: 50px;">
+                    </a>
+                    <p class="font-15 fables-third-text-color">
+                        우리의 사이트는 어쩌구 얼쑤!<br>
+                        저희의 사이트는 저저절씨구!
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3">Contact us</h2>
+                    <div class="my-3">
+                        <h4 class="font-16 semi-font">
+                            <!-- <span class="fables-iconmap-icon fables-second-text-color pr-2 font-20 mt-1 d-inline-block">  </span>  -->
+                            주소
+                        </h4>
+                        <p class="font-14 fables-fifth-text-color mt-2 ml-4">서울특별시 강남구 영동대로 511 (삼성동)</p>
+                    </div>
+                    <div class="my-3">
+                        <h4 class="font-16 semi-font">
+                            <!--   <span class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> -->
+                            연락처
+                        </h4>
+                        <p class="font-14 fables-fifth-text-color mt-2 ml-4">1566-5114</p>
+                    </div>
+                    <div class="my-3">
+                        <h4 class="font-16 semi-font">
+                            <!-- <span class="fables-iconemail fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span>  -->
+                            Mail
+                        </h4>
+                        <p class="font-14 fables-fifth-text-color mt-2 ml-4">4joFighting@naver.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3">서비스 이용하기</h2>
+                    <ul class="nav fables-footer-links">
+                        <!-- <li><a href="about1.html">About Us</a></li> 여기에 우리 html 넣으면 됩니다
+                        <li><a href="contactus1.html">Contact Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</body>
+
+</html>

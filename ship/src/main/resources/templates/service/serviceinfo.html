@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>서비스 항로</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- bootstrap css -->
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" href="css/service_info.css">
+<!-- responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- awesome fontfamily -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- style css -->
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/index.css">
+<!-- 메뉴 css -->
+<link rel="stylesheet" href="css/menu_black.css">
+ <!-- style css -->
+
+<style>
+h1 {
+    display: inline-block;    
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 5px solid navy;
+    width: 330px;
+}	
+h3 {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    border-left: 5px solid navy;
+    color: black;
+}
+.bg-light {
+    background-color: whitesmoke !important;
+}
+.pb-5, .py-5 {
+    padding-bottom: 0rem!important;
+}
+.fables-second-hover-color{
+	background: navy;
+	border-radius: 20px;
+	color: whitesmoke !important;
+	margin-left: 11px;
+	font-size: 18px;
+	font-weight: 700;
+	
+}
+.fables-second-hover-color:hover{
+	background: navy;	
+	color : white ;
+}
+
+#map {
+   width:1170px; 
+   height:700px;
+   margin: 0 auto;
+}
+
+</style>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Dzk5wKFtkj2p4zNqlNRoQugZJKg6VbM&callback=initMap"></script>
+<!-- awesome fontfamily -->
+<link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script th:src="@{/js/jquery-3.7.0.min.js}"></script>
+	<script defer th:src="@{/js/serviceinfo.js}"></script>
+</head>
+
+<!-- body -->
+
+<body class="main-layout inner_page">
+	<header>
+		<!-- header inner -->
+		<div class="head-top">
+
+			<div class="container-fluid">
+				<div class="row d_flex">
+					<div class="navbar_mega">
+					<!-- class="col-sm-3" -->
+						<!--로그인, 메뉴 버튼 오른쪽 정렬-->
+						<div class="logo">
+							<!--로고-->
+							<a th:href=@{/} style="padding:0px;"><img th:src="@{/images/black_logo.png}" class="logoimg"></a>
+						</div> 
+					
+						<a th:href=@{/about} class="a"style="font-size:20px; color:rgb(9, 9, 146); font-weight:bold; padding-left:120px;"> About us </a>
+						
+						<div class="subnav">
+							<button class="subnavbtn">Service <i class="fa fa-caret-down"></i></button>
+							<div class="subnav-content">
+								<a th:href=@{/serviceinfo}> 서비스 정보 </a>
+								<a th:href=@{/subscribe}> 구독하기 </a>
+								<a th:href=@{/cargoeye}> CargoEye </a>
+							</div>
+						</div>
+						<div class="subnav">
+							<button class="subnavbtn">Information <i class="fa fa-caret-down"></i>
+							</button>
+							<div class="subnav-content">
+								<a th:href=@{/exchange}>환율 정보</a> 
+								<a th:href=@{/weather}>날씨 정보</a> 
+								<a th:href=@{/shipinfo}>부대비용</a> 
+								<a th:href=@{/schedule}>선박 스케줄</a>
+							</div>
+						</div>
+						<div class="subnav">
+							<button class="subnavbtn">Customer <i class="fa fa-caret-down"></i>
+							</button>
+							<div class="subnav-content">
+								<a th:href=@{/boardList}>자유게시판 </a> <!-- 하민 -->
+								<a th:href=@{/marine_news}>해운뉴스</a>  <!-- 혜민 -->
+								<a th:href=@{/contact}>Contact us</a> 
+								
+							</div>
+						</div>
+						<div class="subnav login_cargoeye">
+							<!--상단메뉴아이콘 <img class="openbtn" src="images/menu_btn.png">--> 
+							
+							<a th:href=@{/cargoeye} >
+							<img th:src="@{/images/logo1.png}" style="width:28px; margin-bottom: 5px;">
+								<span style="padding-left:0px;">CargoEye</span></a>					
+						</div>						
+						</div>			
+					</div><!-- .navbar_mega-->	
+					<!-- end ._cargoeye-->
+				</div>
+				<!-- end .login+cargoeye -->
+			</div>
+
+			<a th:href=@{/login}>
+				<i class="fa fa-user" aria-hidden="true" sec:authorize="not isAuthenticated()"> Login</i>	
+			</a>
+			<a th:href=@{/logout} >
+				<i class="fa fa-user" aria-hidden="true" sec:authorize="isAuthenticated()"> Logout</i>	
+			</a>
+	</header>
+
+<hr style="margin-bottom: 0px !important;">
+
+	<!-- end header -->
+
+
+	<!-- 1. container.page -->
+	<div style="background-color: whitesmoke;">
+	<div class="py-5 border-bottom text-center mb-5  font-weight-bold">
+	
+   		<h1><strong>Service Information</strong></h1><br><br><br>	
+
+			<!-- intro -->
+			<div class="box_intro">
+				<p class="txt_location"></p>
+				<!-- snb-->
+
+				<div class="bg_snb">
+					<div class="wrap_snb_route">
+						<ul class="snb_route" id="snb_route">
+							<li class="on"><a href="#" id="service_route1"
+								class="service_route1 service_route"> <span class="bar1">
+										동남아 서비스 </span>
+							</a></li>
+
+							<li class="on"><a href="#" id="service_route2"
+								class="service_route2 service_route"> <span class="bar2">
+										한/일 서비스 </span>
+							</a></li>
+
+							<li class="on"><a href="#" id="service_route3"
+								class="service_route3 service_route"> <span class="bar3">
+										한/중 서비스 </span>
+							</a></li>
+
+
+						</ul>
+					</div>
+					<!-- //서비스 항로 snb-->
+				</div>
+				<!-- //snb-->
+
+		</div>
+
+
+	<section id="sandwich" class="bg-light py-5 border-bottom">
+
+		<div class="text-center mb-5  font-weight-bold">
+         <p class="title" id="title">
+           동남아 서비스
+         </p>
+         <div class=" d-flex justify-content-center align-items-center">
+           <div class="dropdown">
+             <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton"
+               data-toggle="dropdown" aria-expanded="false">
+               <span> 서비스 항로 </span>
+               <i class="fa fa-caret-down"></i>
+             </button>
+             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<li><a class="dropdown-item" href="#">PUSAN(KR) - HO CHI
+								MINH CITY(VN)</a></li>
+						<li><a class="dropdown-item" href="#">PUSAN(KR) -
+								SINGAORE(SG)</a></li>
+						<li><a class="dropdown-item" href="#">PUSAN(KR) -
+								JAKARTA(ID)</a></li>
+						<li><a class="dropdown-item" href="#">PUSAN(KR) -
+								BANGKOK(TH)</a></li>
+						<li><a class="dropdown-item" href="#">INCHEON(KR) - HO
+								CHI MINH CITY(VN)</a></li>
+						<li><a class="dropdown-item" href="#">INCHEON(KR) -
+								HANOI(VN)</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+   <div id="map" ></div>
+	<!-- 오버라이팅끝 -->
+	<!-- //test -->
+
+		<div class="container py-4 py-lg-5"
+			style="padding-top: 33px !important;">
+			<div class="fables-blog my-3">
+
+				<h3>
+					<strong  style="margin-left: 10px !important;">서비스소개</strong>
+				</h3>
+				<br>
+				<br>
+				
+
+				<div class="row" >
+					<div class="col-12 col-md-4 mb-4 mb-lg-5">
+						<div class="aaaa" style="background-color: white;">
+							<a href="#"><img src="images/api.png" alt="" class="w-100"></a>
+							<h2 class="font-18 semi-font font-18  mt-3">
+								<a href="#"
+									class="fables-main-text-color fables-second-hover-color">
+									실시간 선박 위치</a>
+							</h2>
+
+
+							<p class="ttt">
+								실시간으로 화물의 위치를 추적하는 <span style="color:rgb(204, 0, 0); font-weight: bold;">Cargo-Eye</span>
+								서비스를 제공합니다. <br>이를 통해 고객 여러분께서는 시간과 비용을 절약하실 수 있으며, 새로운 기회를 창출하실 수
+								있습니다.
+							</p>
+						</div>
+					</div>
+
+
+
+					<div class="col-12 col-md-4 mb-4 mb-lg-5">
+						<div class="aaaa" style="background-color: white;">
+							<a href="#"><img src="images/past_track.jpg" alt=""
+								class="w-100"></a>
+							<h2 class="font-18 semi-font font-18  mt-3">
+								<a href="#"
+									class="fables-main-text-color fables-second-hover-color">선박의
+									발자취</a>
+							</h2>
+
+
+							<p class="ttt"></p>
+						</div>
+					</div>
+
+
+
+
+					<div class="col-12 col-md-4 mb-4 mb-lg-5">
+						<div class="aaaa" style="background-color: white;">
+							<a href="#"><img src="images/future_track.png" alt=""
+								class="w-100"></a>
+							<h2 class="font-18 semi-font font-18  mt-3">
+								<a href="#"
+									class="fables-main-text-color fables-second-hover-color">도착
+									시간 예측</a>
+							</h2>
+
+							<p class="ttt">현재 위치에서 도착항(POD)까지 남은 시간을 계산해줍니다.<br> Cargo Eye 서비스로 더 정확해진 도착예정시간(ETA)을 확인해보세요.</p>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- test end -->
+	<!-- test2 -->
+	<div>
+		<div class="container py-4 py-lg-5"
+			style="padding-top: 33px !important;">
+			<div class="fables-blog my-3">
+				<h3>
+					<strong  style="margin-left: 10px !important;">빅데이터& A.I</strong>
+				</h3>
+				<br>
+				<br>
+			
+
+				<div class="row" >
+					<div class="col-12 col-md-4 mb-4 mb-lg-5">
+						<div class="aaaa" style="background-color: white;">
+							<a href="#"><img src="images/tech1.png" alt="" class="w-100"></a>
+							<h2 class="font-18 semi-font font-18  mt-3">
+								<a href="#"
+									class="fables-main-text-color fables-second-hover-color">
+									PCA</a>
+							</h2>
+
+
+							<p class="ttt">PCA를 이용하여 표준항로의 20개의 구간으로 나눔으로써, 거리기준 약 100KM
+								마다의 정보를 업데이트 해서 더욱 정확한 항로를 예측합니다.</p>
+						</div>
+					</div>
+
+
+
+					<div class="col-12 col-md-4 mb-4 mb-lg-5">
+						<div class="aaaa" style="background-color: white;">
+							<a href="#"><img src="images/tech2.png" alt="" class="w-100"></a>
+							<h2 class="font-18 semi-font font-18  mt-3">
+								<a href="#"
+									class="fables-main-text-color fables-second-hover-color">DBSCAN,
+									GridSearch</a>
+							</h2>
+
+
+							<p class="ttt">우리 서비스의 핵심 머신러닝 기술로서, DBSCAN는 밀도기반 알고리즘으로 적절한
+								군집을 생성하여, 표준항로를 추출합니다.</p>
+						</div>
+					</div>
+
+
+
+
+					<div class="col-12 col-md-4 mb-4 mb-lg-5">
+						<div class="aaaa" style="background-color: white;">
+							<a href="#"><img src="images/tech3.png" alt="" class="w-100"></a>
+							<h2 class="font-18 semi-font font-18  mt-3">
+								<a href="#"
+									class="fables-main-text-color fables-second-hover-color">Cosine
+									Similarity</a>
+							</h2>
+
+							<p class="ttt">더 정확한 표준항로를 제시하기위한 2차검증방법으로 대표성을 띄는 표준
+								항로를 추출하고, 가장 빈도수가 높은 표준항로를 최초 예측 항로로 제시해 줍니다.</p>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- // 블로그 끝 -->
+	<!-- test2 -->
+
+
+	<div class="btn_box text-center font-weight-bold">
+		
+		<a id="sss" class="btn btn-raised shadow my-button indigo" th:href="@{/subscribe}">구독하기</a>
+	</div>
+</div>
+
+
+</body>
+
+
+
+
+<!-- Javascript files-->
+<script th:src="@{js/jquery.min.js}"></script>
+<script th:src="@{js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{js/jquery-3.0.0.min.js}"></script>
+<script th:src="@{js/custom.js}"></script>
+
+
+
+</html>

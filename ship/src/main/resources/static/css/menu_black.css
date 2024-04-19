@@ -1,0 +1,105 @@
+/* 메뉴 적용 css */
+
+head-top{
+font-family: 'Bebas Neue', sans-serif;
+}
+.logoimg {
+     width: 100px;
+     float: left;
+     
+
+}
+h1{
+	margin: 0 auto;
+    font-size: 35px;
+    border-bottom: 5px solid navy;
+    margin-bottom: -4px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.navbar_mega>logo>a>img{
+	width:100px; 
+	padding: 0 0 0 10px;
+}
+.openbtn {
+	width: 60px;
+}
+
+a>i.fa {
+	color:rgb(9, 9, 146); 
+	font-size: 20px; 
+	position: absolute; 
+    top: 15px;
+    right: 15px;
+	font-weight:bold;	    
+}
+
+
+.font-20{ 
+    font-size: 30px;
+}
+
+.login_cargoeye>a>span{
+	color:rgb(9, 9, 146); 
+	font-size:20px;  
+	padding: 5px;
+	font-weight:bold;
+}
+
+
+div.subnav-content>a{
+	font-size:20px;  
+	text-align: center;
+	padding-left: 100px; 
+	padding-right:20px;
+}
+
+
+
+div.login_cargoeye>a>span:hover{
+	font-weight: bold;
+}
+/* 드랍다운 메뉴 */
+.subnav .subnavbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+   	color:rgb(9, 9, 146); 
+    background-color: inherit;
+    font-family: inherit;
+    padding: 0 0 0 120px; 
+    font-weight:bold;
+    /* 패딩으로 간격조정 */
+    
+}
+
+/* 호버 배경색 */
+.subnav-content a:hover{
+	font-weight: bold;
+}
+.subnavbtn:hover{
+    /* background-color: pink; */
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.about:hover{
+	font-weight: bold;
+    text-shadow: black;
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: block;
+    width: 1169px;
+    margin-left: 147px;  
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 30px;  
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 100;
+}

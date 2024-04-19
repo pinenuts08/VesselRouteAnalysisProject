@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko" xmlns:th="www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Vessel Information</title>
+	
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no, date=no">
+	<link rel="shortcut icon" href="/resources/kor/images/common/favicon.ico">
+	
+	<link rel="stylesheet" th:href="@{css/shipinfo.css}">
+
+	<script th:src="@{js/modernizr-2.8.3.min.js}"></script>
+	<script th:src="@{js/jquery-1.12.1.min.js}"></script>
+	
+	
+</head>
+<body>	
+	<!--[if lt IE 8]>
+    <p class="browserupgrade">현재 사용하고 계신 브라우져는 <strong>공식지원</strong> 이 끊긴 브라우져입니다. 다음 페이지에서  <a href="http://browsehappy.com/">브라우져 업그레이드</a>를 진행해주세요.</p>
+  	<![endif]-->
+		<!-- Content 영역 -->
+
+		<div class="box_top clearfix">
+			
+			<!-- 선박선택 -->
+			<div class="box_vessel">
+				<p class="tit">선박선택</p>
+				<ul class="list_vessel">
+					<li class="on"><a href="#none">HAKATA SEOUL / Korea</a></li>
+					<li><a href="#none">KMTC DUBAI / Korea</a></li>
+					<li><a href="#none">KMTC MUMBAI / Korea</a></li>
+					<li><a href="#none">KMTC CHENNAI / Korea</a></li>					
+					<li><a href="#none">KMTC JEBEL ALI / Korea</a></li>					
+					<li><a href="#none">KMTC MANILA / Korea</a></li>					
+					<li><a href="#none">KMTC NHAVA SHEVA / Korea</a></li>					
+					<li><a href="#none">KMTC QINGDAO / Korea</a></li>						
+					<li><a href="#none">KMTC HOCHIMINH / Korea</a></li>					
+					<li><a href="#none">KMTC TIANJIN / Korea</a></li>
+					<li><a href="#none">KMTC NINGBO / Korea</a></li>
+					<li><a href="#none">KMTC SHENZHEN / Korea</a></li>
+					<li><a href="#none">KMTC PENANG / Korea</a></li>
+					<li><a href="#none">KMTC SURABAYA / Korea</a></li>
+					<li><a href="#none">KMTC HAIPHONG / Korea</a></li>	 
+					<li><a href="#none">KMTC GWANGYANG / Korea</a></li>	
+					<li><a href="#none">KMTC INCHEON / Korea</a></li>			
+					<li><a href="#none">KMTC NAGOYA / Korea</a></li>	
+					<li><a href="#none">KMTC OSAKA / Korea</a></li>	
+					<li><a href="#none">KMTC POHANG / Korea</a></li>	
+					<li><a href="#none">KMTC TOKYO / Korea</a></li>	
+					<li><a href="#none">KMTC TAIPEIS / Korea</a></li>		
+					<li><a href="#none">KMTC BANGKOK / Korea</a></li>
+					<li><a href="#none">KMTC LAEM CHABANG / Korea</a></li>
+					<li><a href="#none">KMTC JAKARTA / Korea</a></li>
+					<li><a href="#none">KMTC SINGAPORE / Korea</a></li>
+					<li><a href="#none">KMTC KEELUNG / Korea</a></li>
+					<!-- <li><a href="#none">KMTC HONGKONG / Korea</a></li>  -->
+					<li><a href="#none">KMTC PUSAN / Korea</a></li>
+					<li><a href="#none">KMTC ULSAN/ Korea</a></li>
+					<li><a href="#none">SUNNY CALLA / Korea</a></li>
+					<li><a href="#none">SUNNY CAMELLIA / Korea</a></li>
+					<li><a href="#none">SUNNY FREESIA / Korea</a></li>
+					<li><a href="#none">SUNNY IRIS / Korea</a></li>
+					<li><a href="#none">SUNNY LOTUS / Korea</a></li>
+					<li><a href="#none">SUNNY COSMOS / Korea</a></li>
+					<li><a href="#none">SUNNY LILY / Korea</a></li>
+					<li><a href="#none">SUNNY ACACIA / Korea</a></li>
+					<li><a href="#none">SUNNY CANNA / Korea</a></li>
+					<li><a href="#none">SUNNY CLOVER / Korea</a></li>
+					<li><a href="#none">SUNNY DAISY / Korea</a></li>
+					<li><a href="#none">SUNNY LAUREL / Korea</a></li>
+					<li><a href="#none">SUNNY LAVENDER / Korea</a></li>
+					<li><a href="#none">SUNNY ROSE/ Korea</a></li>
+					<li><a href="#none">SUNNY DAHLIA / Korea</a></li>
+					<li><a href="#none">SUNNY LINDEN / Korea</a></li>
+					<li><a href="#none">SUNNY MAPLE / Korea</a></li>
+					<li><a href="#none">SUNNY OAK / Korea</a></li>
+					<li><a href="#none">SUNNY PALM / Korea</a></li>
+					<li><a href="#none">SUNNY SPRUCE / Korea</a></li>
+					<li><a href="#none">SUNNY PINE / Korea</a></li>
+					<!--  
+					<li><a href="#none">SUNNY OLIVE / Korea</a></li>
+					<li><a href="#none">SUNNY CEDAR / Korea</a></li>
+					-->
+				</ul>
+			</div>
+			<!-- //선박선택-->
+		</div>
+		<!-- 선박정보-->
+		
+		<!--HAKATA SEOUL -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">HAKATA SEOUL</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>PANAMA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>PANAMA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>NK</dd>
+				<dt>CALL SIGN</dt>
+				<dd>3FOE7</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9495040</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>90,488.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>86,679.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>47,960.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>45.60  M</dd>
+				<dt>WHEN BUILT</dt>
+				<dd>2010.08</dd>
+				<dt>CARGO CAPACITY</dt>
+				<dd>8,540 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>316.00 M</dd>
+			</dl>
+		</div>
+		<!--//HAKATA SEOUL-->
+		
+		<!--KMTC DUBAI -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC DUBAI</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<dt>CALL SIGN</dt>
+				<dd>3FJI9</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9723928</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>65,072.00 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>52,254.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>29,448.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>37.30 M</dd>
+				<dt>WHEN BUILT</dt>
+				<dd>2015.05</dd>
+				<dt>CARGO CAPACITY</dt>
+				<dd>5,466 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>255.00 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC DUBAI-->
+		
+		<!--KMTC MUMBAI-->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC MUMBAI</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>D7UF</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9665695</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>65,156.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>51,872.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd> 29,415.00 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd> 37.30 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2014.07</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>5,466 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd> 255.00 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC MUMBAI-->
+		
+			<!--KMTC CHENNAI -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC CHENNAI</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>D7KC</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9375513</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>51,648.60</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd> 40,487.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd> 18,771.00 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>32.20 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2008.08</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>4,275 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>261.40 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC CHENNAI-->
+		
+		<!--KMTC JEBEL ALI -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC JEBEL ALI</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>D7SH</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9375305</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>51,648.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd> 40,487.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd> 18,771.00 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>32.20 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2008.03</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>4,275 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>261.40 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC JEBEL ALI-->
+		
+		<!--KMTC MANILA -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC MANILA</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+			     <dt>CALL SIGN</dt>
+				<dd>D7SD</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9375496</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>51,752.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd> 40,487.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd> 18,771.00 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>32.20 M </dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2008.05</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>4,275 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>261.40 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC MANILA-->
+		
+		<!--KMTC NHAVA SHEVA -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC NHAVA SHEVA</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>D7SG</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9375501</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>51,648.60</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd> 40,487.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd> 18,771.00 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>32.20 M</dd>
+				<dt>WHEN BUILT</dt>
+				<dd>2008.06</dd>
+				<dt>CARGO CAPACITY</dt>
+				<dd>4,275 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>261.40 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC NHAVA SHEVA-->
+		
+		<!--KMTC  QINGDAO -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC QINGDAO</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<dt>CALL SIGN</dt>
+				<dd>DSQT9</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9235593</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>39,386.00 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>27,799.00 </dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>14,769.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>30.0 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>24.0 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2003.01</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd></dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>2,826 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>222.10 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC  QINGDAO-->
+		
+		<!--KMTC HOCHIMINH -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC HOCHIMINH</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<dt>CALL SIGN</dt>
+				<dd>D7BM</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9314923</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>39,295.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>28,927.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>15,033.00 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd> 30.00 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2005.09</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				-->
+				<dt>CARGO CAPACITY</dt>
+				<dd>2,824 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>222.10 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC HOCHIMINH-->
+		
+		<!--KMTC TIANJIN -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC TIANJIN</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>DSMA4</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9315848</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>39,338.00 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>28,927.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>15,033.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd> 222.10 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd> 30.00 </dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2005.07</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>2,824 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>222.10 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC TIANJIN-->
+		
+		<!--KMTC NINGBO -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC NINGBO</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>3FCO6</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9626405</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd> 38,985.00 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>28,467.00 </dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd> 13,263.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>30.0 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2013.03</dd>
+				 <dt>CARGO CAPACITY</dt>
+				<dd>2,778 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd> 222.90 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC NINGBO-->
+		
+		<!--KMTC SHENZHEN -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC SHENZHEN</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU, KOREA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>D7UC</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9626417</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>38,985.00 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd> 28,467.00 </dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>13,263.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>30 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2013.06</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>2778 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>222.9 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC SHENZHEN-->
+		
+		<!--KMTC PENANG -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC PENANG</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>PANAMA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>PANAMA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>NK</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>3ECW9</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9821093</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd> 34,285.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>28,517.00 </dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd> 11,781.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>35.20 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2018.05</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>2776 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>199.9 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC PENANG -->
+		
+		<!--KMTC SURABAYA -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC SURABAYA</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>PANAMA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>PANAMA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>NK</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>31782-PEXT</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>3ELX9</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9821081</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>34,285.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>28,517.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>11,781.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>35.20 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>21.5 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2018.04</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>200 PLUGS</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>2,776 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>199.90 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC SURABAYA-->
+		
+		<!--KMTC HAIPHONG -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC HAIPHONG</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>MARSHALL ISLANDS</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>MAJURO</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>AB</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>31782-PEXT</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>V7KD4</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9793806</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>21,737.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>18,370.00 </dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd> 7,536.00 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.50 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>21.5 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2017.06</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>200 PLUGS</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,822 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd> 172.20 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC HAIPHONG-->
+		
+		<!--KMTC GWANGYANG -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC GWANGYANG</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>PANAMA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>PANAMA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>NK</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>31961-PEXT</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>3FDY9</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9848895</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>21,500.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>17,933.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,043.00 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.40  M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>21.20 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2019.06</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>200 PLUGS</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,809 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>172.10 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC GWANGYANG-->
+		
+		<!--KMTC INCHEON -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC INCHEON</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>PANAMA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>PANAMA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>NK</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>JJR-094287</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>3FHB3</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9859911</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>22,387.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>17,933.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,170.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.40 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>20.0 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2019.06</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>100 PLUGS</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,809 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd> 172.00 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC INCHEON-->
+		
+		<!--KMTC NAGOYA -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC NAGOYA</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>PANAMA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>PANAMA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>NK</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>JJR-094287</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>HO3256</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9859894</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>22,401.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>17,933.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,170.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.40 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>20.0 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2019.05</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>100 PLUGS</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,809 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd> 172.00 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC INCHEON-->
+		
+		<!--KMTC OSAKA -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC OSAKA</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>PANAMA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>PANAMA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>NK</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>JJR-094287</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>3EHZ9</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9848883</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>22,444.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>17,853.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,170.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.40 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>20.0 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2019.03</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>100 PLUGS</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,809 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd> 172.00 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC OSAKA>
+		
+	<!--KMTC POHANG -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC POHANG</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>PANAMA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>PANAMA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>NK</dd>
+				<dt>CALL SIGN</dt>
+				<dd>3FNQ</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9848900</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd> 22,386.00 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>17,933.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,170.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.40 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>20.0 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2019.07</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>100 PLUGS</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,809 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>172.00 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC OSAKA>
+		
+		<!--KMTC TOKYO -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC TOKYO</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>PANAMA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>PANAMA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>NK</dd>
+				<dt>CALL SIGN</dt>
+				<dd>H8SF</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9848871</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd> 22,444.00 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>17,853.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,170.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.40 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>20.0 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2019.02</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>100 PLUGS</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,809 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>172.00 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC TOKYO>
+		
+		<!--KMTC TAIPEIS -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC TAIPEIS</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>HONG KONG</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>HONG KONG</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>AB</dd>
+				<dt>CALL SIGN</dt>
+				<dd>VRQQ3</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9781188</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>21,741.00 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>18,370.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,536.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.50 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>20.0 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2017.04</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>100 PLUGS</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,804 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>172.20 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC TAIPEIS>
+		
+		<!--KMTC BANGKOK -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC BANGKOK</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>LIBERIA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>MONROVIA, LIBERIA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>BV</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>D5ML2</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9772228</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>21,800.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>18,318.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,404.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd> 27.50 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2016.11</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,770 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>172.20 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC BANGKOK-->
+		
+		<!--KMTC LAEM CHABANG -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC LAEM CHABANG</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>LIBERAI</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>MONROVIA, LIBERIA</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>BV</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>D5MP9</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9772230</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>21,800.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>18,318.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,404.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd> 27.50 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2017.02</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,770 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>172.20 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC LAEM CHABANG-->
+		
+		<!--KMTC HONHKONG -->
+		<!--
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC HONGKONG</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<dt>CALL SIGN</dt>
+				<dd>DSOH4</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9131864</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>20,999.00 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>16,731.00 </dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,380.00 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.2 M</dd>
+				<dt>WHEN BUILT</dt>
+				<dd>1998.05</dd>
+				<dt>CARGO CAPACITY</dt>
+				<dd>1,585 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>168.5 M</dd>
+			</dl>
+		</div>
+		  -->
+		<!--//KMTC HONHKONG-->
+		
+		<!--KMTC JAKARTA -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC JAKARTA</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>29400-PEXT</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>DSOA8</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9217424</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>20,541.00 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>16,659 </dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,334 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.2 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>20.5 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2001.04</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>150 PLUGS (AC 440V)</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,626 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>171.7 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC JAKARTA-->
+		
+		<!--KMTC SINGAPORE -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC SINGAPORE</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>29399-PEXT</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>DSOA9</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9217412</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>20,530.30 </dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>16,659 </dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,334.00 </dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.2 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>20.5 KNOTS</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>2001.03</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>150 PLUGS (AC 440V)</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1,626 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>171.6 M</dd>
+			</dl>
+		</div>
+		<!--//KMTC SINGAPORE-->
+		
+		<!--KMTC KEELUNG -->
+		<div class="wrap_desc">
+			<p class="vessel_tit">KMTC KEELUNG</p>
+			<dl class="vessel_desc clearfix">
+				<dt>FLAG</dt>
+				<dd>KOREA</dd>
+				<dt>PORT OF REGISTRY</dt>
+				<dd>JEJU</dd>
+				<dt>SHIP'S CLASS</dt>
+				<dd>KR</dd>
+				<!-- <dt>OFFICIAL REGIST. NO.</dt>
+				<dd>-</dd>
+				--> <dt>CALL SIGN</dt>
+				<dd>DSOF3</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>IMO NO.</dt>
+				<dd>9157741</dd>
+				<dt>DEAD WEIGHT TONNAGE</dt>
+				<dd>20,962.00</dd>
+				<dt>GROSS TONNAGE</dt>
+				<dd>16,731.00</dd>
+				<dt>NET REGISTER TONNAGE</dt>
+				<dd>7,380.00</dd>
+			</dl>
+			<dl class="vessel_desc clearfix">
+				<dt>BREADTH</dt>
+				<dd>27.2 M</dd>
+				<!-- <dt>SPEED</dt>
+				<dd>-</dd>
+				--> <dt>WHEN BUILT</dt>
+				<dd>1998.03</dd>
+				<!-- <dt>REEFER CONTAINER</dt>
+				<dd>-</dd>
+				--> <dt>CARGO CAPACITY</dt>
+				<dd>1585 TEU</dd>
+				<dt>LENGTH OVER ALL</dt>
+				<dd>168.5 M</dd>
+			</dl>
+		</div>
+		<!--//선박이름-->
+		
+
+		
+
+		<!-- // Content 영역 -->
+	<script src="/resources/kor/js/dev.common.js"></script>
+	<script src="/resources/kor/js/dev.form.js"></script>
+	<script src="/resources/kor/js/dev.util.js"></script>
+	<script src="/resources/kor/js/dev.validate.js"></script>
+	<script src="/resources/kor/js/vendor/slick.min.js"></script>
+	<script src="/resources/kor/js/bstones.js"></script>
+	<script src="/resources/kor/js/common.js"></script>
+	<script>
+		$(function () {
+			/* 디자인 셀렉트박스 */
+			// 라벨 클릭시 셀렉트박스 보이기
+			$('.select_box .select_label').on('click', function(){
+				$(this).next('.select_down').css('display', 'block');
+			});
+			
+			/*
+			// 셀렉트박스 li가 7개 초과하면 스크롤
+			var selectHeight = $('.select_box .select_down').height();
+			if(selectHeight > 384) {
+				$('.select_box .select_down').addClass('on');
+			}
+			*/
+			
+			// 셀렉트박스 li가 7개 초과하면 스크롤
+			var selectCnt = $('.select_box .select_down li').size();
+			var downBoxHeight = selectCnt * 54;
+			if(downBoxHeight > 200) {
+				if(downBoxHeight > 390 ){
+					downBoxHeight = '396';
+				};
+				$('.select_down').css({
+					'height' : downBoxHeight,
+					'overflow-y' : 'auto',
+					'z-index' : '1000'
+				});
+			}
+			
+			
+			// 셀렉트박스 li요소 클릭
+			$(document).on('click', '.select_box .select_down li', function() {
+			    // 선택한 요소로 값변환 및 설정
+			    $(this).parents('.select_box').find('.select_label a').text($(this).children('a').text());
+			    $(this).parents('.select_box').children('input[type="hidden"]').val($(this).children('a').data('value'));
+			    // 셀렉트박스 없어짐
+			    $(this).parents('.select_down').css('display', 'none');
+			});
+			
+			// 셀렉트박스가 아닌 다른곳을 클릭시 셀렉트박스 닫기
+			$(document).on('click', function(e) {
+			    if($(e.target).parents('.select_box').size() == 0) {
+			        $('.select_box .select_down').css('display', 'none');
+			    }
+			});
+		});
+	</script>
+
+
+<script>
+$(function () {
+    // 선박선택 클릭시(on) 이미지와 설명
+	$('.list_vessel li').click(function () {
+    	var index = $(this).index();
+
+        $('.list_vessel li').removeClass('on');
+        $(this).addClass('on');
+
+    	$('.content_vessel .wrap_desc').css('display', 'none');
+    	$('.content_vessel .wrap_desc').eq(index).css('display', 'block');
+    	$('.content_vessel .box_img .img').css('display', 'none');
+    	$('.content_vessel .box_img .img').eq(index).css('display', 'block');
+    });
+});
+</script>
+</body>
+</html>

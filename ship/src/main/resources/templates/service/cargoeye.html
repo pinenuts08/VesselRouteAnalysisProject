@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>CargoEye</title><base>
+	 <style>
+		#map {
+		   width:100%; 
+		   height:700px; 
+		   }
+		ul {
+			margin-left: 12px;
+			padding-left: 12px;
+		}
+		li{
+			font-size: 20px;
+			font-weight: 400;
+		}
+		.bold {
+			font-weight: 600;
+			color: navy;
+		}
+		li.dot {
+			list-style-image: url('images/dot.png');
+		}
+		li.locked {
+			list-style-image: url('images/lock.png');
+		}
+	</style>
+	<script src="https://kit.fontawesome.com/483b10876b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" th:href="@{/css/cargoeye.css}">
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Dzk5wKFtkj2p4zNqlNRoQugZJKg6VbM&callback=initMap"></script>
+	<!-- awesome fontfamily -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script th:src="@{/js/jquery-3.7.0.min.js}"></script>
+	<script defer th:inline="javascript" th:src="@{/js/googlemap.js}"></script><!-- th:inline="javascript" : 자바스크립트에서 th를 사용하고 싶을 때 -->
+
+</head>
+<body>
+   <div class="wrapper">
+   <div class="logo">
+		<a th:href=@{/} ><img src="images/logo.png" class="logoimg" style = "width:80px; padding:0 15px;" ></a>
+	</div>
+      <div id="search">
+         <select name="" id="searchOption">
+            <option value="선박명으로 검색">VSL NAME</option>
+            <option value="B/L NUMBER로 검색">B/L NUMBER</option>
+         </select> 
+         <input type="text" name="vsl_id" id="vslId"> 
+         <span>CALL SIGN  <input type="text" name="" id="callSign"></span>
+          <span>IMO NUMBER <input type="text" name="" id="imoNumber"></span>
+         <span>MMSI        <input type="text" name="" id="mmsi"></span> 
+         <span>DATE       <input type="date" name="" id="date"></span>
+         <button type="submit" id="submitBtn">검색</button>
+      </div>
+      		<a href="#">
+			<i class="fa fa-user" aria-hidden="true" style="color: white; font-size: 18px; 
+			position: absolute; top: 15px;  right: 31px;"> Logout</i>
+			<span  style="font-size: 20px;"></span> 
+		</a>
+		<span sec:authentication="principal.authorities" id="role" style="display: none;"></span>
+   </div>
+   <!-- end .wrapper -->
+   <div id="map" ></div>
+</body>
+</html>

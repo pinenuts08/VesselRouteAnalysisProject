@@ -1,0 +1,299 @@
+/* 서비스 항로 */
+
+.box_intro{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 서비스 항로 */
+.box_intro p {
+    font-weight: bold;
+    color: black;
+    font-size: x-large;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.title {
+    font-size: x-large !important;
+    font-weight: bold !important;
+    color : rgb(9, 9, 146) !important;
+    margin: 0 auto !important;
+    padding-bottom: 2% !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+
+
+/*뒷배경색깔*/
+.border-bottom {
+    border-bottom: 1px solid #fff !important;
+}
+
+
+/* 서비스 버튼 */
+.snb_route li {
+    width: 300px;
+    height: 43px;
+    font-size: large;
+    background-color: whitesmoke;
+    box-sizing: 10px;
+    border-radius: 90px;
+    margin-top: 2%;
+    display: inline-block;
+    padding: 0px;
+    margin: 20px;
+    position: relative;
+    color: rgb(9, 9, 146) !important;
+}
+
+.service_route:hover{
+	color: white !important;
+	background-color: rgb(9, 9, 146) !important ;
+  	width: 300px;
+}
+.fables-second-hover-color{
+	display : inline-block;
+	height: 43px;
+	width: 300px;
+	line-height: 43px;
+    color: rgb(9, 9, 146) !important;
+    text-decoration: none !important;  
+   
+}
+.service_route{
+	color: navy ;
+    text-decoration: none !important;
+    line-height: 1.2px;
+}
+
+
+
+	
+/* 드랍다운 */
+
+.dropdown-toggle {
+    width: 500px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 50px !important;
+    font-weight: 700 !important;
+    font-size: large !important;
+    color: #fff !important;
+    background-color: rgb(9, 9, 146) !important;
+    border-color: rgb(9, 9, 146)!important;
+}
+
+.dropdown-toggle:focus {
+    box-shadow: none !important;
+}
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    width: 500px !important;
+    border: 2px solid rgb(9, 9, 146);
+    padding: 0rem 0;	
+    font-weight: 400 !important;
+    font-size: large !important;
+    transform: translate3d(0px, 50px, 0px) !important;
+	
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: black;
+    background-color: rgba(169, 169, 169, 0.256);
+    padding: 12px;
+}
+
+.dropdown-item {
+    /* display: block; */
+    width: 100%;
+    padding: 10px;
+    display: flex;
+   
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* 드랍다운 끝 */
+
+
+
+
+/* 지도 이미지 */
+#route_img {
+    margin: 0 auto;
+	height: 811px;
+    width: 1140px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* 지도 이미지 끝*/
+
+/* end container.page */
+/* 서비스 소개 해빈수정*/
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-grow: 1; /* flex 컨테이너의 넓이를 늘림 */
+}
+
+
+.w-100 {
+	margin-top : 20px;
+    height: 300px !important;
+    width: 300px !important;
+    margin-left: 10px;
+}
+
+h2 a {
+    color: #212121;
+    text-decoration: none !important;
+    margin-top: 2px;
+    opacity: 1;
+    text-align: center;
+}
+
+
+ p.mb-lg-5, .my-lg-5 {
+    margin-bottom: 13rem!important;
+}
+
+.aaaa {
+    color: black;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgba(190, 199, 206, 0.5);
+    height: 600px;
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ttt {
+	text-align: left;
+    margin: 0px !important;
+    padding: 20px !important;
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 28px !important;
+}
+
+
+/*서비스이미지 아래 글자*/
+div.stop p {
+   
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 28px !important;
+    display: flex !important;
+    /*justify-content: center;
+    align-content: center !important;*/
+    flex-direction: column;
+}
+
+
+/*서비스이미지크기*/
+.whohle{
+	display: flex;
+}
+
+
+div.serv_img1313 img.serviceimg0707 {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.oneimg_explain {
+    display: flex;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* 서비스소개 끝 */
+
+/* 구독 버튼 */
+
+.btn-raised {
+    margin-top: -35px;
+    margin-bottom: 45px;
+    transition: box-shadow .4s cubic-bezier(.25, .8, .25, 1), transform .4s cubic-bezier(.25, .8, .25, 1);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+    width: 203px;
+    height: 55px;
+    font-weight: 700;
+    font-size: large;
+    border-radius: 80px;
+}
+
+.btn-raised:not([disabled]):active,
+.btn-raised:not([disabled]):focus,
+.btn-raised:not([disabled]):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+    transform: translate3d(0, -1px, 0)
+}
+
+.shadow {
+    overflow: hidden;
+    position: relative;
+    transform: translate3d(0, 0, 0)
+}
+
+.shadow:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1.5s
+}
+
+.shadow:active:before {
+    transform: scale(0, 0);
+    opacity: .1;
+    transition: 0s
+}
+
+.indigo {
+    background-color: rgb(9, 9, 146);
+    color: #fff !important;
+    line-height: 43.5px;
+}
+
+/* 회사소개 - 구독 버튼 끝! */
+

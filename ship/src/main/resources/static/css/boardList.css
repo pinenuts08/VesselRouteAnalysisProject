@@ -1,0 +1,131 @@
+#pagingForm {
+    width: 300px;
+    margin-left: 835px;
+    margin-bottom: 30px;
+}
+
+#searchItem {
+    height: 32px;
+}
+
+#searchBtn {
+    background-color: #006d98;
+    color: white;
+    border-color: none;
+}
+
+.seqNo {
+    width: 170px;
+    text-align: center;
+}
+
+.contentWrite {
+    text-align: left;
+}
+
+#contentWrite {
+    text-align: center;
+}
+
+.writer {
+    width: 150px;
+    text-align: center;
+}
+
+#titleText {
+    width: 500px;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+.title {
+    text-align: left;
+    padding-left: 5px;
+}
+
+#writeBtn {
+    margin-left: 1100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h1 {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    margin: 60px 0 80px 550px;
+    font-size: 40px;
+    border-bottom: 5px solid navy;
+}
+
+.date {
+    width: 200px;
+    text-align: center;
+}
+
+table tr:nth-child(1) th {
+    border-top: 2px solid black;
+}
+
+#serachIcon {
+    width: 30px;
+}
+
+
+.height {
+    padding-bottom: 60px;
+}
+
+.form {
+
+    position: relative;
+}
+
+.form .fa-search {
+
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+
+}
+
+.form span {
+
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan {
+    padding-left: 7px;
+}
+
+.left-pan i {
+
+    padding-left: 10px;
+}
+
+.form-input {
+
+    height: 45px;
+    width: 400px;
+    text-indent: 33px;
+    border-radius: 100px;
+}
+
+.form-input:focus {
+
+    box-shadow: none;
+    border: none;
+}
+
+#searchBox {
+    margin-left: 440px;
+}

@@ -1,0 +1,453 @@
+
+
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+
+h1 {
+     font-size: 24px
+}
+
+
+h2 {
+     font-size: 22px
+}
+
+
+h3 {
+     font-size: 18px
+}
+
+
+h4 {
+     font-size: 16px
+}
+
+
+h5 {
+     font-size: 14px
+}
+
+
+h6 {
+     font-size: 13px
+}
+
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+div.currentPageName{
+color:rgb(192, 192, 192);
+background: rgba(0,51,153,0.9);
+text-align: left;
+margin-top:0px; 
+margin-right: 0px;
+width: 1170px;
+height: 60px;
+margin-bottom: 15px;
+}
+
+
+div.currentPageName>h2{
+	font-size: 2.2em;
+	font-weight: bold;
+	color: white;
+	margin-left: 15px;
+	padding-top: 10px;
+}
+
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #212121;
+     text-decoration: none !important;
+     opacity: 1
+}
+
+
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+
+p {
+     margin: 0px;
+     padding: 0;
+     font-weight: 400;
+     font-size: 17px;
+     line-height: 28px;
+}
+
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+
+
+.navbar_mega a:hover{
+    text-shadow: #fff;
+   
+}
+.btn-custom {
+     margin-top: 20px;
+     background-color: transparent !important;
+     border: 2px solid #ddd;
+     padding: 12px 40px;
+     font-size: 16px;
+}
+/* The subnavigation menu */
+.subnav {
+    float: left;
+    overflow: hidden;
+    
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar_mega a:hover,
+.subnav:hover .subnavbtn {
+    background-color: transparent;
+    text-align: center;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.lead {
+     font-size: 18px;
+     line-height: 30px;
+     color: #767676;
+     margin: 0;
+     padding: 0;
+}
+
+
+.form-control:focus {
+     border-color: #ffffff !important;
+     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+
+.navbar-form input {
+     border: none !important;
+}
+
+
+.badge {
+     font-weight: 500;
+}
+
+/* 
+blockquote {
+     margin: 20px 0 20px;
+     padding: 30px;
+} */
+
+button {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+}
+
+
+.full {
+     width: 100%;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+
+
+.titlepage {
+     padding-bottom: 60px;
+}
+
+
+.titlepage h2 {
+     font-size: 45px;
+     font-weight: bold; 
+     line-height: 55px;
+     color: black;
+     padding-bottom: 10px;
+}
+
+
+.read_more {
+    display: inline-block;
+    background: #ffffff;
+    color: #000;
+    max-width: 191px;
+    height: 47px;
+    line-height: 48px;
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 61px;
+    transition: ease-in all 0.5s;
+}
+
+/*자세히보기 버튼*/
+.read_more:hover {
+     background: rgb(0 51 153);
+     color: #fff;
+     transition: ease-in all 0.3s;
+}
+
+
+/*컨테이너들 사이즈*/
+.container {
+     max-width: 1170px;
+}
+
+/*----------------------------
+loader  /*로딩 화면에 대한 설정*/
+----------------------------*/
+
+
+.loader_bg {
+     position: fixed;
+     z-index: 9999999;
+     background: #ec1313;
+     width: 100%;
+     height: 100%;
+}
+
+
+.loader {
+     height: 50px;
+     width: 10px;
+     position: absolute;
+}
+
+
+.loader img {
+     width: 280px;
+}
+
+
+
+
+/*---------------------------------------------------------------------
+header
+---------------------------------------------------------------------*/
+
+
+header {
+    background: white;
+    width: 100%;
+    height: 125px;
+    z-index: 9;
+}
+
+
+/* 컴퍼니, 컨택트, 로그인 부분 */
+
+.navbar_mega a:hover{
+    text-shadow: #fff;
+   
+}
+
+
+/* banner_main (전체배경화면)*/
+
+.banner_main {
+     background-image: url('../images/banner2.jpg');
+     width: 100%;
+     height: 753px;
+     background-size: cover;
+     padding-top: 110px;
+     position: relative;
+     /*  background-attachment: fixed;*/
+     background-position: center;
+}
+
+
+/*대문의 배사진*/
+.vesselimg {
+     margin: 0;
+}
+
+.vesselimg figure {
+    margin-right: 0;
+    width: 585px;
+    height: 753px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-image: url(../images/vessel.jpg);
+    background-size: 585px 753px;
+    background-repeat: no-repeat;
+    z-index: 7;
+}
+
+.vesselimg figure {
+    margin-right: 0;
+    width: 600px;
+    height: 753px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-image: url(../images/vessel.jpg);
+    background-size: 600px 753px;
+    background-repeat: no-repeat;
+    z-index: 7;
+}
+
+
+/*대문글귀*/
+.face h1 {
+    color: #fff;
+    font-size: 64px;
+    line-height: 29px;
+    font-weight: bold;
+    padding-top: 250px;
+    padding-bottom: 35px;
+}
+
+.face p {
+     color: #fff;
+     line-height: 25px;
+     padding-bottom: 50px;
+     font-size: 17px;
+}
+
+/*menu*/
+/* 메뉴 적용 css */
+
+head-top{
+font-family: 'Bebas Neue', sans-serif;
+}
+.logoimg {
+     width: 110px;
+}
+.navbar_mega {
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    padding-top: 42px;
+   	width: 1410px;
+   	height: 90px;
+}
+.navbar_mega>logo>a>img{
+	width:100px; 
+	padding: 0 0 0 10px;
+}
+.openbtn {
+	width: 60px;
+}
+
+a>i.signin {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 25px;
+    right: 122px;
+}
+
+.loginncargo {
+	background: red;
+}
+
+.font-20{ 
+    font-size: 30px;
+}
+
+
+div.subnav-content>a{
+	font-size:20px;  
+	text-align: center;
+	padding-left: 200px; 
+}
+
+div.login_cargoeye>a>span:hover{
+	font-weight: bold;
+}
+
+
+/* 호버 배경색 */
+.subnav-content a:hover{
+	font-weight: bold;
+}
+.subnavbtn:hover{
+    /* background-color: pink; */
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 30px;  
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+
